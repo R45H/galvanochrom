@@ -7,5 +7,13 @@ $name: title;
 	&_main {
 		font-size: 40px;
 		color: #fff;
+		border-left: 5px solid $color-second;
+		padding-left: 15px;
+
+		.subtitle {
+			font-size: 22px;
+			font-weight: 300;
+			display: inline-block;
+		}
 	}
 }
