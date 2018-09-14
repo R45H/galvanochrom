@@ -1,6 +1,7 @@
 include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
+include ../mixins/slider
 
 .container
 	.row.mb-30
@@ -43,3 +44,10 @@ include ../mixins/list
 				text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
 				src: '../img/image-project2.jpg'
 			})(class='project_center')
+	.row.mb-30
+		.col-7
+			+slider([
+				{src: 'img/slide1.jpg'},
+				{src: 'img/slide1.jpg'},
+				{src: 'img/slide1.jpg'}
+			])

@@ -1,0 +1,128 @@
+$name: slider;
+
+
+.#{$name} {
+	/* Arrows */
+	.slick-prev,
+	.slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		display: block;
+		width: 47px;
+		height: 65px;
+		padding: 0;
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: #000;
+		z-index: 1;
+		opacity: 0.5;
+		transition: all ease-out .5s;
+	}
+	.slick-prev:hover,
+	.slick-next:hover {
+		transition: all ease-out .5s;
+		color: transparent;
+		outline: none;
+		background: transparent;
+	}
+	//.slick-prev:hover:before,
+	//.slick-prev:focus:before,
+	//.slick-next:hover:before,
+	//.slick-next:focus:before {
+	//	transition: all ease-out .5s;
+	//	opacity: 1;
+	//}
+	//.slick-prev.slick-disabled:before,
+	//.slick-next.slick-disabled:before {
+	//	transition: all ease-out .5s;
+	//	opacity: .25;
+	//}
+
+	.slick-prev:before,
+	.slick-next:before {
+		color: white;
+		content: '';
+		position: absolute;
+		top: 33%;
+		height: 25px;
+		width: 25px;
+		border-top: solid 3px currentColor;
+		border-right: solid 3px currentColor;
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+
+	.slick-prev:before {
+		left: 15px;
+		transform: rotate(225deg);
+	}
+
+	.slick-next {
+		right: 0;
+	}
+
+	.slick-next:before {
+		right: 15px;
+		transform: rotate(45deg);
+	}
+
+	/* Dots */
+	.slick-dotted.slick-slider {
+		margin-bottom: 30px;
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: 18px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	.slick-dots li {
+		position: relative;
+		display: inline-block;
+		width: 21px;
+		height: 21px;
+		margin: 0 12px;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	.slick-dots li button {
+		font-size: 0;
+		line-height: 0;
+		display: block;
+		width: 21px;
+		height: 21px;
+		padding: 5px;
+		cursor: pointer;
+		color: #000;
+		border: 0;
+		outline: none;
+		background: #fff;
+		opacity: 0.9;
+		border-radius: 50%;
+	}
+
+	.slick-dots li button:hover,
+	.slick-dots li button:focus {
+		outline: none;
+	}
+
+	.slick-dots .slick-active{
+		button {
+			background: $color-second;
+			opacity: 1;
+		}
+	}
+}
