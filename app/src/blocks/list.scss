@@ -35,6 +35,13 @@ $name: list;
 				color: #fff;
 			}
 		}
+
+		&_active {
+
+			.#{$name}__link {
+				color: $color-second;
+			}
+		}
 	}
 
 	&__link {
@@ -44,12 +51,5 @@ $name: list;
 		display: block;
 		width: 100%;
 		height: 100%;
-	}
-
-	.active {
-
-		.list__link {
-			color: $color-second;
-		}
 	}
 }

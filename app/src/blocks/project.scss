@@ -1,0 +1,48 @@
+$name: project;
+
+.#{$name}{
+	background: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__img {
+		width: 100%;
+		background-size: cover;
+		padding-bottom: 71%;
+		flex: none;
+	}
+
+	&__text {
+		font-size: 22px;
+		padding: 15px 30px;
+		min-height: 105px;
+		position: relative;
+		color: #3a3a3a;
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		text-decoration: none;
+
+		p {
+			margin: 0px;
+		}
+
+		&:hover {
+			color: $color-second;
+		}
+	}
+
+	&_center {
+		.#{$name}__text {
+			text-align: center;
+			justify-content: center;
+
+			&:hover {
+				transition: all ease-out .5s;
+				background: $color-main;
+				color: #fff;
+			}
+		}
+	}
+}

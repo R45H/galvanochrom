@@ -1,4 +1,6 @@
 include ../mixins/svg
+include ../mixins/project
+include ../mixins/list
 
 .container
 	.row.mb-30
@@ -6,23 +8,18 @@ include ../mixins/svg
 			h2.title .title
 			h2.title.title_main .title.title_main
 
-	.row
+	.row.mb-30
 		.col-3
-			ul.list
-				li.list__item.active
-					a.list__link(href='#') ТВЕРДОЕ ХРОМИРОВАНИЕ
-				li.list__item
-					a.list__link(href='#') НИКЕЛИРОВАНИЕ
-				li.list__item
-					a.list__link(href='#') ФОСФОТИРОВАНИЕ
-				li.list__item
-					a.list__link(href='#') ЦИНКОВАНИЕ
-				li.list__item
-					a.list__link(href='#') КАДМИРОВАНИЕ
-				li.list__item
-					a.list__link(href='#') МЕДНЕНИЕ
-				li.list__item
-					a.list__link(href='#') АНОДИРОВАНИЕ
+			+list([
+				{text: "ТВЕРДОЕ ХРОМИРОВАНИЕ", link: '#'},
+				{text: "НИКЕЛИРОВАНИЕ", link: '#'},
+				{text: "ФОСФОТИРОВАНИЕ", link: '#'},
+				{text: "ЦИНКОВАНИЕ", link: '#'},
+				{text: "КАДМИРОВАНИЕ", link: '#'},
+				{text: "МЕДНЕНИЕ", link: '#'},
+				{text: "АНОДИРОВАНИЕ", link: '#'}
+			])
+
 		.col-3
 			button.btn все услуги
 		.col-3
@@ -35,7 +32,14 @@ include ../mixins/svg
 				.advantage__img
 					+svg('sertificat', 'advantage__icon')
 				.advantage__text Благодаря огромному опыту мы можем разрабатывать
-	.row
+	.row.mb-30
 		.col-6
+			+project({
+				text: 'ПРОЕКТИРОВАНИЕ И ИЗГОТОВЛЕНИЕ НЕСТАНДАРТНОГО ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ',
+				src: '../img/image-project.jpg'
+			})
 		.col-6
-
+			+project({
+				text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
+				src: '../img/image-project2.jpg'
+			})(class='project_center')
