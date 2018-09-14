@@ -1,10 +1,10 @@
+include ../mixins/svg
+
 .container
 	.row.mb-30
 		.col-12
 			h2.title .title
-			h2.title .title
-			h2.title .title
-			h2.title .title
+			h2.title.title_main .title.title_main
 
 	.row
 		.col-3
@@ -23,3 +23,19 @@
 					a.list__link(href='#') МЕДНЕНИЕ
 				li.list__item
 					a.list__link(href='#') АНОДИРОВАНИЕ
+		.col-3
+			button.btn все услуги
+		.col-3
+			a.advantage
+				.advantage__img
+					+svg('factory', 'advantage__icon')
+				.advantage__text Благодаря огромному опыту мы можем разрабатывать и изготавливать нестандартное оборудование не только гальванической направленности.
+		.col-3
+			a.advantage
+				.advantage__img
+					+svg('sertificat', 'advantage__icon')
+				.advantage__text Благодаря огромному опыту мы можем разрабатывать
+	.row
+		.col-6
+		.col-6
+

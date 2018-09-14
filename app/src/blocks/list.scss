@@ -10,6 +10,7 @@ $name: list;
 	&__item {
 		width: 100%;
 		border-bottom: 1px solid $color-gray-medium;
+		text-transform: uppercase;
 
 		&:last-child {
 			border-bottom: none;

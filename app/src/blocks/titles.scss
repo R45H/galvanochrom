@@ -1,0 +1,11 @@
+$name: title;
+
+.#{$name} {
+	font-weight: 500;
+	font-size: 25px;
+
+	&_main {
+		font-size: 40px;
+		color: #fff;
+	}
+}

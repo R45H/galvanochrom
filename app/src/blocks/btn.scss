@@ -1,0 +1,26 @@
+$name: btn;
+
+.#{$name} {
+	text-transform: uppercase;
+	width: 100%;
+	max-width: 260px;
+	background: transparent;
+	border: 2px solid $color-main;
+	color: $color-main;
+	font-size: 16px;
+	height: 51px;
+	cursor: pointer;
+
+	&:hover {
+		transition: all ease-out .5s;
+		background: $color-main;
+		color: #fff;
+	}
+
+	&:active {
+		transition: all ease-out .5s;
+		background: $color-main-active;
+		border: 2px solid $color-main-active;
+		color: #fff;
+	}
+}
