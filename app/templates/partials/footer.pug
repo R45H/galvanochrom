@@ -21,12 +21,9 @@ footer.footer
 						])
 	.footer__bottom
 		.container
-			.row
-				.col-12.footer__bottom-content
+			.row.footer__bottom-content
+
 					.footer-contacts
-						.contacts-item
-							+svg('location', 'contacts-item__icon')
-							p г. Санкт-Петербург Уманский пер., д. 71 (здание "Трест-101")
 						.contacts-item
 							+svg('message', 'contacts-item__icon')
 							p
@@ -35,7 +32,9 @@ footer.footer
 							+svg('phone', 'contacts-item__icon')
 							p
 								a.phone(href='tel: 89219441109 ') +7 (921) 944-11-09
+
 					p.copyright &copy; 2018 ООО «Гальванохром»
+
 					p.web
 						| Разработано в
 						a.web(title='Золотой партнёр 1C-Битрикс. Web-разработка и системная интеграция', href='https://webcenter.pro/', target='_blank', rel='nofollow')

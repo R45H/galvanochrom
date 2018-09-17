@@ -4,6 +4,7 @@
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
+	transition: all ease-out .5s;
 }
 
 a.web{
@@ -16,12 +17,15 @@ a.web{
 	width: 50px;
 	max-height: 23px;
 	fill: #1f1f1f;
+	transition: all ease-out .5s;
 }
 
 .webc__icon:hover .cls-1 {
-	fill:#334b61
+	fill: #334b61;
+	transition: all ease-out .5s;
 }
 
 .webc__icon:hover .cls-2 {
-	fill:#ff141f;
+	fill: #ff141f;
+	transition: all ease-out .5s;
 }
