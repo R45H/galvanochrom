@@ -1,0 +1,9 @@
+mixin advantage(data)
+	a.advantage(
+		class= attributes.class
+		href= data.link
+	)
+		.advantage__img-wrap
+			.advantage__img
+				+svg(data.icon, 'advantage__icon')
+		.advantage__text= data.text

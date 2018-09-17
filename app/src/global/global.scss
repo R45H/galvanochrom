@@ -1,10 +1,6 @@
 html {
 	height: 100%;
-	font-size: 6px;
-
-	@include screen-sm() {
-		font-size: 7px;
-	}
+	font-size: 7px;
 
 	@include screen-md() {
 		font-size: 8px;
@@ -22,7 +18,7 @@ html {
 body {
 	height: 100%;
 	font-family: $font-main;
-	font-size: 1.5rem;
+	font-size: 15px;
 	line-height: 1.2;
 	color: $color-text;
 	background-color: $color-gray-light;
@@ -66,16 +62,21 @@ p {
 }
 
 a {
+	text-decoration: none;
+	color: inherit;
 
 	&:not([class]),
 	&[class=''] {
+		color: $color-text;
+		text-decoration: none;
+		border-bottom: 1px solid;
 
 		&:hover {
-
+			color: $color-second;
 		}
 
 		&:active {
-
+			color: $color-second-active;
 		}
 	}
 }

@@ -1,15 +1,20 @@
 $name: btn;
 
 .#{$name} {
+	display: inline-block;
 	text-transform: uppercase;
-	width: 100%;
-	max-width: 260px;
-	background: transparent;
+	background-color: transparent;
 	border: 2px solid $color-main;
 	color: $color-main;
 	font-size: 16px;
-	height: 51px;
 	cursor: pointer;
+	text-align: center;
+	font-family: $font-main;
+	line-height: 1.2;
+	outline: none;
+	word-break: break-word;
+	font-weight: bold;
+	padding: 13px 39px;
 
 	&:hover {
 		transition: all ease-out .5s;
@@ -22,5 +27,12 @@ $name: btn;
 		background: $color-main-active;
 		border: 2px solid $color-main-active;
 		color: #fff;
+	}
+
+	&_wide {
+		display: block;
+		width: 100%;
+		padding-left: 26px;
+		padding-right: 26px;
 	}
 }

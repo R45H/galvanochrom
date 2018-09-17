@@ -2,61 +2,134 @@ include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
 include ../mixins/slider
+include ../mixins/advantage
 
 .container
 	.row.mb-30
+
+	.row.mb-30
 		.col-12
-			h2.title .title
-			h2.title.title_main .title.title_main
-			h2.title.title_main Производство гальванического оборудования
-				span.subtitle Полный цикл работ: проектирование, изготовление, монтаж, запуск
+			.text
+				h1 Производство
+				h2 Производство
+				h3 Производство
+				h4 Производство
+				h5 Производство
+				h6 Производство
+				p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+				ul
+					li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+					li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+						ul
+							li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+							li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+
+	.row
+		.col-3.mb-30
+			a.link(href='#') .link
+
+	.row
+		.col-12.mb-30
+			h2.main-title
+				.main-title__title Производство гальванического оборудования
+
+		.col-12.mb-30
+			h2.main-title
+				.main-title__title Производство гальванического оборудования
+				span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+
+		.col-12.mb-30
+			h2.main-title.main-title_prefix
+				span.main-title__prefix 20
+				.main-title__title Лет успешной работы
+
+	.row.mb-30
+		.col-12
+			h2.title Производство гальванического оборудования
 
 	.row.mb-30
 		.col-3
 			+list([
-				{text: "ТВЕРДОЕ ХРОМИРОВАНИЕ", link: '#'},
-				{text: "НИКЕЛИРОВАНИЕ", link: '#'},
-				{text: "ФОСФОТИРОВАНИЕ", link: '#'},
-				{text: "ЦИНКОВАНИЕ", link: '#'},
-				{text: "КАДМИРОВАНИЕ", link: '#'},
-				{text: "МЕДНЕНИЕ", link: '#'},
-				{text: "АНОДИРОВАНИЕ", link: '#'}
+				{text: "Твердое хромирование", link: '#'},
+				{text: "Никелирование", link: '#'},
+				{text: "Фосфотирование", link: '#'},
+				{text: "Цинкование", link: '#'},
+				{text: "Кадмирование", link: '#'},
+				{text: "Меднение", link: '#'},
+				{text: "Анодирование", link: '#'}
 			])
 
-		.col-3
-			button.btn все услуги
-		.col-3
-			a.advantage
-				.advantage__img
-					+svg('factory', 'advantage__icon')
-				.advantage__text Благодаря огромному опыту мы можем разрабатывать и изготавливать нестандартное оборудование не только гальванической направленности.
-		.col-3
-			a.advantage
-				.advantage__img
-					+svg('sertificat', 'advantage__icon')
-				.advantage__text Благодаря огромному опыту мы можем разрабатывать
+	.row
+		.col-3.mb-30
+			.btn .btn
+		.col-3.mb-30
+			a.btn(href='#') a.btn
+		.col-3.mb-30
+			button.btn button.btn
+		.col-3.mb-30
+			input.btn(type='button' value='input.btn')
+		.col-3.mb-30
+			.btn.btn_wide .btn.btn_wide
+
 	.row.mb-30
-		.col-6
-			+project({
-				text: 'ПРОЕКТИРОВАНИЕ И ИЗГОТОВЛЕНИЕ НЕСТАНДАРТНОГО ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ',
-				src: '../img/image-project.jpg'
+		.col-3
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
 			})
+		.col-3
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Наша команда'
+			})(class='advantage_strong')
 		.col-6
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Наша команда'
+			})(class='advantage_horizontal')
+
+	.row
+		.col-4.mb-30
 			+project({
-				text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
-				src: '../img/image-project2.jpg'
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})
+		.col-4.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})(class='project_upper')
+		.col-4.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
 			})(class='project_center')
+		.col-4.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})(class='project_fill')
+
 	.row.mb-30
-		.col-5
+		.col-4
 			.description
-				.description__text
+				.description__text.text
 					p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
 					p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
 				.description__btn
-					button.btn все услуги
+					a.btn(href='#') Все услуги
+
+	.row.mb-30
 		.col-7
 			+slider([
-				{src: 'img/slide1.jpg'},
-				{src: 'img/slide1.jpg'},
-				{src: 'img/slide1.jpg'}
+				{src: 'img/content/slider/01.jpg'},
+				{src: 'img/content/slider/01.jpg'},
+				{src: 'img/content/slider/01.jpg'}
 			])

@@ -5,13 +5,16 @@
 // =====
 
 // Блоки
-@import 'blocks/titles';
-@import 'blocks/btn';
-@import 'blocks/list';
-@import 'blocks/slider/slider';
-@import 'blocks/advantage';
-@import 'blocks/description';
-@import 'blocks/project';
+@import 'blocks/link'; // Ссылка
+@import 'blocks/main-title'; // Главный заголовок
+@import 'blocks/title'; // Заголовок
+@import 'blocks/btn'; // Кнопка
+@import 'blocks/list'; // Вертикальное меню
+@import 'blocks/project'; // Карточка с фото и текстом
+@import 'blocks/slider/slider'; // Слайдер
+@import 'blocks/advantage'; // Карточка с иконкой
+@import 'blocks/description'; // Блок с описанием и ссылкой
+@import 'blocks/text'; // Текстовый блок
 /* Blocks will be inserted here */
 // =====
 

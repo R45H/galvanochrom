@@ -2,5 +2,10 @@ mixin list(data)
 	ul.list
 
 		each val, i in data
-			li.list__item(class= !i ? 'list__item_active': '')
-				a.list__link(href= val.link)= val.text
+
+			if !i
+				li.list__item.list__item_active
+					span.list__link= val.text
+			else
+				li.list__item
+					a.list__link(href= val.link)= val.text
