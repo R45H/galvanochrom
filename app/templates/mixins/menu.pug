@@ -1,0 +1,5 @@
+mixin menu(data)
+	ul.menu
+		each val in data
+			li.menu__item
+				a.menu__link(href= val.link)= val.text

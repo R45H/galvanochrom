@@ -2,4 +2,31 @@ $name: header;
 
 .#{$name} {
 	flex: 0 0 auto;
+
+	&__top {
+		background: #fff;
+
+		.logo__img{
+			margin-top: 10px;
+			display: block;
+		}
+
+		&-content {
+			display: flex;
+		}
+	}
+
+	&__bottom {
+		background: $color-main;
+		padding: 15px 0;
+
+		&-content {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+	}
 }
