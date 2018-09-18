@@ -23,4 +23,15 @@ $name: btn;
 		border: 2px solid $color-main-active;
 		color: #fff;
 	}
+
+	&_hamburger {
+		color: #fff;
+		width: 18px;
+		height: 22px;
+		padding: 0;
+
+		@include screen-sm() {
+			display: none;
+		}
+	}
 }

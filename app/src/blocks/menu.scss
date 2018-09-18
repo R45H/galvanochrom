@@ -2,14 +2,24 @@ $name: menu;
 
 .#{$name} {
 	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
+	@include screen-sm() {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	&__link {
 		color: #fff;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 600;
+	}
+
+	&__item {
+		padding: 5px 0;
+		@include screen-sm() {
+			padding: 0;
+		}
 	}
 }

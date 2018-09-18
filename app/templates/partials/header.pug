@@ -9,13 +9,13 @@ header.header
 	.header__top
 		.container
 			.row.header__top-content
-				.col-3
+				.col-6.col-sm-4.col-md-3
 					+logo({
 						src: 'img/logo.png',
 						alt: 'logo',
 						title: 'logo'
 					})
-				.col-9
+				.col-6.col-sm-8.col-md-9
 					.header__contacts
 						.contacts-item
 							+svg('location', 'contacts-item__icon')
@@ -33,6 +33,8 @@ header.header
 			.row.header__bottom-content
 				.col-9
 					nav
+						button.btn.btn_hamburger
+							i.fa.fa-bars
 						+menu([
 							{text: "УСЛУГИ", link: '#'},
 							{text: "ТЕХНОЛОГИИ", link: '#'},
