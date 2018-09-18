@@ -1,7 +1,6 @@
 include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
-include ../mixins/slider
 
 .container
 	.row.mb-30
@@ -55,8 +54,36 @@ include ../mixins/slider
 				.description__btn
 					button.btn все услуги
 		.col-7
-			+slider([
-				{src: 'img/slide1.jpg'},
-				{src: 'img/slide1.jpg'},
-				{src: 'img/slide1.jpg'}
-			])
+			.slider.js-slider
+				.slider__item
+				.slider__item
+				.slider__item
+	.row.mb-30
+		.col-12
+			.slider
+				.slider__item
+					p.title.title_main lrdldflfgplfgpofgpofdspofsdop
+				.slider__item
+					p.title.title_main lrdldflfgplfgpofgpofdspofsdop
+				.slider__item
+					p.title.title_main lrdldflfgplfgpofgpofdspofsdop
+	.row.mb-30
+		.col-12
+			.slider.slider_dots_none
+				.slider__item
+					+project({
+						text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
+						src: '../img/image-project2.jpg'
+					})
+				.slider__item
+					+project({
+						text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
+						src: '../img/image-project2.jpg'
+					})
+				.slider__item
+					+project({
+						text: 'МОДЕРНИЗАЦИЯ И РЕКОНСТРУКЦИЯ ГАЛЬВАНИЧЕСКИХ ЦЕХОВ',
+						src: '../img/image-project2.jpg'
+					})
+
+
