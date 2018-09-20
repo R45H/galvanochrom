@@ -22,6 +22,8 @@ $name: project;
 		display: flex;
 		align-items: center;
 		flex-grow: 1;
+		text-align: center;
+		justify-content: center;
 
 		&:hover {
 			color: $color-second;
@@ -30,14 +32,6 @@ $name: project;
 
 	&_upper {
 		text-transform: uppercase;
-	}
-
-	&_center {
-
-		.#{$name}__text {
-			text-align: center;
-			justify-content: center;
-		}
 	}
 
 	&_fill {

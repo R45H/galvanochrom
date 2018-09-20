@@ -9,10 +9,12 @@ $name: header;
 
 	&__top {
 		background: white;
+		padding: 10px 0;
+	}
 
-		&-content {
-			display: flex;
-		}
+	&__top-content {
+		display: flex;
+		align-items: center;
 	}
 
 	&__bottom {

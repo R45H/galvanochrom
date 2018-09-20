@@ -42,7 +42,7 @@ $name: btn;
 		height: 22px;
 		padding: 0;
 
-		@include screen-sm() {
+		@include screen-md() {
 			display: none;
 		}
 	}

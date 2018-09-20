@@ -1,21 +1,42 @@
+include ../mixins/list
 
-.banner
-	.slider.slider_dots_left
-		.slider__item
+.slider.slider_dots_left.slider_height.slider_arrows_big
+	.slider__item
+		.banner.banner_middle
 			.container
 				.row
 					.col-12
-						h1.title.title_main Производство гальванического оборудования
-							span.subtitle Полный цикл работ: проектирование, изготовление, монтаж, запуск
-		.slider__item
+						h1.main-title
+							.main-title__title Производство гальванического оборудования
+							span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+	.slider__item
+		.banner.banner_middle
 			.container
 				.row
 					.col-12
-						h1.title.title_main Производство гальванического оборудования
-							span.subtitle Полный цикл работ: проектирование, изготовление, монтаж, запуск
-		.slider__item
+						h1.main-title
+							.main-title__title Производство гальванического оборудования
+							span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+	.slider__item
+		.banner.banner_middle
 			.container
 				.row
 					.col-12
-						h1.title.title_main Производство гальванического оборудования
-							span.subtitle Полный цикл работ: проектирование, изготовление, монтаж, запуск
+						h1.main-title
+							.main-title__title Производство гальванического оборудования
+							span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+.container
+	.row
+		.col-12
+			h2.title Выполняем проектирование и изготовление оборудования по следующим технологиям:
+		.col-4
+			+list([
+				{text: "ТВЕРДОЕ ХРОМИРОВАНИЕ", link: '#'},
+				{text: "НИКЕЛИРОВАНИЕ", link: '#'},
+				{text: "ФОСФОТИРОВАНИЕ", link: '#'},
+				{text: "ЦИНКОВАНИЕ", link: '#'},
+				{text: "КАДМИРОВАНИЕ", link: '#'},
+				{text: "МЕДНЕНИЕ", link: '#'},
+				{text: "АНОДИРОВАНИЕ", link: '#'}
+			])
+		.col-8

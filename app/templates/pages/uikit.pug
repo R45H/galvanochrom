@@ -113,12 +113,6 @@ include ../mixins/logo
 				text: 'Модернизация и реконструкция гальванических цехов',
 				src: '../img/content/project/01.jpg',
 				link: '#'
-			})(class='project_center')
-		.col-4.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
 			})(class='project_fill')
 
 	.row.mb-30
@@ -131,25 +125,60 @@ include ../mixins/logo
 					a.btn(href='#') Все услуги
 
 	.row.mb-30
-		.col-7
+		.col-6
 			.slider
 				.slider__item
+					.image
 				.slider__item
+					.image
 				.slider__item
-
-	.row.mb-30
-		.col-12
+					.image
+		.col-6
 			.slider.slider_dots_left
 				.slider__item
-					p.title.title_main Разработка нестандартного оборудования
+					.image
 				.slider__item
-					p.title.title_main Разработка нестандартного оборудования
+					.image
 				.slider__item
-					p.title.title_main Разработка нестандартного оборудования
-
+					.image
+		.col-6
+			.slider.slider_arrows_big
+				.slider__item
+					.image
+				.slider__item
+					.image
+				.slider__item
+					.image
+.mb-30
+	.slider.slider_dots_left.slider_height.slider_arrows_big
+		.slider__item
+			.banner.banner_middle
+				.container
+					.row
+						.col-12
+							h1.main-title
+								.main-title__title Производство гальванического оборудования
+								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+		.slider__item
+			.banner.banner_middle
+				.container
+					.row
+						.col-12
+							h1.main-title
+								.main-title__title Производство гальванического оборудования
+								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+		.slider__item
+			.banner.banner_middle
+				.container
+					.row
+						.col-12
+							h1.main-title
+								.main-title__title Производство гальванического оборудования
+								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+.container
 	.row.mb-30
 		.col-12
-			.slider.slider_dots_none
+			.slider.slider_dots_none.slider_arrows_big
 				.slider__item
 					+project({
 						text: 'Модернизация и реконструкция гальванических цехов',
