@@ -1,0 +1,24 @@
+$name: contacts-item;
+
+.#{$name} {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-end;
+
+	a {
+		color: $color-text;
+		text-decoration: none;
+	}
+
+	.phone {
+		font-weight: 700;
+	}
+
+	&__icon {
+		fill: $color-second;
+		height: 32px;
+		width: 42px;
+		margin-right: 6px;
+	}
+}

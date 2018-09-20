@@ -1,2 +1,46 @@
 // HEADER
+include ../mixins/logo
+include ../mixins/menu
+include ../mixins/svg
+include ../mixins/select
+
+
 header.header
+	.header__top
+		.container
+			.row.header__top-content
+				.col-3
+					+logo({
+						src: 'img/logo.png',
+						alt: 'logo',
+						title: 'logo'
+					})
+				.col-9
+					.header__contacts
+						.contacts-item
+							+svg('location', 'contacts-item__icon')
+							p г. Санкт-Петербург Уманский пер., д. 71 (здание "Трест-101")
+						.contacts-item
+							+svg('message', 'contacts-item__icon')
+							p
+								a(href='mailto: manager@galvanochrom.ru') manager@galvanochrom.ru
+						.contacts-item
+							+svg('phone', 'contacts-item__icon')
+							p
+								a.phone(href='tel: 89219441109 ') +7 (921) 944-11-09
+	.header__bottom
+		.container
+			.row.header__bottom-content
+				.col-9
+					nav
+						+menu([
+							{text: "УСЛУГИ", link: '#'},
+							{text: "ТЕХНОЛОГИИ", link: '#'},
+							{text: "НОВОСТИ", link: '#'},
+							{text: "О КОМПАНИИ", link: '#'},
+							{text: "НАШИ ПРОЕКТЫ", link: '#'},
+							{text: "КОНТАКТЫ", link: '#'}
+						])
+				.col-3
+					.header__btn
+						+select(select)
