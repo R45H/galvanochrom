@@ -10,11 +10,8 @@ header.header
 		.container
 			.row.header__top-content
 				.col-6.col-sm-4.col-md-3
-					+logo({
-						src: 'img/logo.png',
-						alt: 'logo',
-						title: 'logo'
-					})
+					.header__logo
+						+logo
 				.col-6.col-sm-8.col-md-9
 					.header__contacts
 						.contacts-item
@@ -27,7 +24,7 @@ header.header
 						.contacts-item
 							+svg('phone', 'contacts-item__icon')
 							p
-								a.phone(href='tel: 89219441109 ') +7 (921) 944-11-09
+								a.contacts-item__phone(href='tel: 89219441109 ') +7 (921) 944-11-09
 	.header__bottom
 		.container
 			.row.header__bottom-content

@@ -1,22 +1,23 @@
 $name: slider;
 
-
 .#{$name} {
+
 	&__item {
-		background: url('../img/slide1.jpg') no-repeat;
+		background: url('../img/content/slider/01.jpg') no-repeat;
 		width: 100%;
 		padding-bottom: 53%;
 		background-size: cover;
 	}
 
-	&_dots_none{
+	&_dots_none {
+
 		.#{$name}__item {
 			background: none;
 			padding-bottom: 0;
 		}
 	}
 
-	/* Arrows */
+	// Arrows
 	.slick-prev,
 	.slick-next {
 		font-size: 0;
@@ -32,11 +33,12 @@ $name: slider;
 		color: transparent;
 		border: none;
 		outline: none;
-		background: #000;
+		background: black;
 		z-index: 1;
-		opacity: 0.5;
+		opacity: .5;
 		transition: all ease-out .5s;
 	}
+
 	.slick-prev:hover,
 	.slick-next:hover {
 		transition: all ease-out .5s;
@@ -44,21 +46,9 @@ $name: slider;
 		outline: none;
 		background: transparent;
 	}
-	//.slick-prev:hover:before,
-	//.slick-prev:focus:before,
-	//.slick-next:hover:before,
-	//.slick-next:focus:before {
-	//	transition: all ease-out .5s;
-	//	opacity: 1;
-	//}
-	//.slick-prev.slick-disabled:before,
-	//.slick-next.slick-disabled:before {
-	//	transition: all ease-out .5s;
-	//	opacity: .25;
-	//}
 
-	.slick-prev:before,
-	.slick-next:before {
+	.slick-prev::before,
+	.slick-next::before {
 		color: white;
 		content: '';
 		position: absolute;
@@ -73,7 +63,7 @@ $name: slider;
 		left: 0;
 	}
 
-	.slick-prev:before {
+	.slick-prev::before {
 		left: 15px;
 		transform: rotate(225deg);
 	}
@@ -82,12 +72,12 @@ $name: slider;
 		right: 0;
 	}
 
-	.slick-next:before {
+	.slick-next::before {
 		right: 15px;
 		transform: rotate(45deg);
 	}
 
-	/* Dots */
+	// Dots
 	.slick-dotted.slick-slider {
 		margin-bottom: 30px;
 	}
@@ -120,11 +110,11 @@ $name: slider;
 		height: 21px;
 		padding: 5px;
 		cursor: pointer;
-		color: #000;
+		color: black;
 		border: 0;
 		outline: none;
-		background: #fff;
-		opacity: 0.9;
+		background: white;
+		opacity: .9;
 		border-radius: 50%;
 	}
 
@@ -133,14 +123,16 @@ $name: slider;
 		outline: none;
 	}
 
-	.slick-dots .slick-active{
+	.slick-dots .slick-active {
+
 		button {
 			background: $color-second;
 			opacity: 1;
 		}
 	}
 
-	&_dots_left{
+	&_dots_left {
+
 		.#{$name}__item {
 			padding-bottom: 0;
 			height: 70vh;

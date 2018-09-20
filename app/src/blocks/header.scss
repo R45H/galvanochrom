@@ -3,13 +3,12 @@ $name: header;
 .#{$name} {
 	flex: 0 0 auto;
 
-	&__top {
-		background: #fff;
+	&__logo {
+		margin-top: 10px;
+	}
 
-		.logo__img{
-			margin-top: 10px;
-			display: block;
-		}
+	&__top {
+		background: white;
 
 		&-content {
 			display: flex;
@@ -18,11 +17,11 @@ $name: header;
 
 	&__bottom {
 		background: $color-main;
+	}
 
-		&-content {
-			display: flex;
-			align-items: center;
-		}
+	&__bottom-content {
+		display: flex;
+		align-items: center;
 	}
 
 	&__contacts {

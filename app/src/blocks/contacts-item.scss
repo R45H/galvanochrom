@@ -22,28 +22,20 @@ $name: contacts-item;
 		text-decoration: none;
 	}
 
-	.phone {
+	&__phone {
 		font-weight: 700;
 	}
 
 	&__icon {
-		fill: $color-second;;
+		fill: $color-second;
 		margin-right: 6px;
 		flex: none;
 		height: 21px;
 		width: 20px;
 
-		@include screen-lg() {
-
-		}
-
 		@include screen-md() {
 			height: 32px;
-			width: 42px
-		}
-
-		@include screen-sm() {
-
+			width: 42px;
 		}
 	}
 }

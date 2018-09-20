@@ -2,6 +2,7 @@ include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
 include ../mixins/advantage
+include ../mixins/logo
 
 .container
 	.row.mb-30
@@ -57,6 +58,10 @@ include ../mixins/advantage
 				{text: "Меднение", link: '#'},
 				{text: "Анодирование", link: '#'}
 			])
+
+	.row.mb-30
+		.col-4
+			+logo
 
 	.row
 		.col-3.mb-30

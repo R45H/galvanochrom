@@ -5,32 +5,30 @@ $name: footer;
 
 	&__top {
 		background: $color-main;
-
-		&-content {
-			align-items: center;
-			padding: 10px 0;
-		}
 	}
 
-	&__bottom {
-		&-content {
-			padding: 10px 15px;
-			text-align: center;
+	&__top-content {
+		align-items: center;
+		padding: 10px 0;
+	}
 
-			@include screen-sm() {
-				align-items: center;
-				display: flex;
-				justify-content: space-between;
-			}
+	&__bottom-content {
+		padding: 10px 15px;
+		text-align: center;
 
-			.contacts-item{
-				justify-content: flex-start;
-				width: 100%;
+		@include screen-sm() {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
 
-				&__icon {
-					width: 23px;
-					height: 24px;
-				}
+		.contacts-item {
+			justify-content: flex-start;
+			width: 100%;
+
+			&__icon {
+				width: 23px;
+				height: 24px;
 			}
 		}
 	}
