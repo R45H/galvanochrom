@@ -18,7 +18,6 @@ $name: header;
 
 	&__bottom {
 		background: $color-main;
-		padding: 15px 0;
 
 		&-content {
 			display: flex;
@@ -28,5 +27,10 @@ $name: header;
 
 	&__contacts {
 		display: flex;
+		flex-wrap: wrap;
+
+		@include screen-lg() {
+			flex-wrap: nowrap;
+		}
 	}
 }

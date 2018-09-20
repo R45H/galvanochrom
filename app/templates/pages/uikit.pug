@@ -1,7 +1,6 @@
 include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
-include ../mixins/slider
 include ../mixins/advantage
 
 .container
@@ -128,8 +127,36 @@ include ../mixins/advantage
 
 	.row.mb-30
 		.col-7
-			+slider([
-				{src: 'img/content/slider/01.jpg'},
-				{src: 'img/content/slider/01.jpg'},
-				{src: 'img/content/slider/01.jpg'}
-			])
+			.slider
+				.slider__item
+				.slider__item
+				.slider__item
+
+	.row.mb-30
+		.col-12
+			.slider.slider_dots_left
+				.slider__item
+					p.title.title_main Разработка нестандартного оборудования
+				.slider__item
+					p.title.title_main Разработка нестандартного оборудования
+				.slider__item
+					p.title.title_main Разработка нестандартного оборудования
+
+	.row.mb-30
+		.col-12
+			.slider.slider_dots_none
+				.slider__item
+					+project({
+						text: 'Модернизация и реконструкция гальванических цехов',
+						src: '../img/content/project/02.jpg'
+					})
+				.slider__item
+					+project({
+						text: 'Модернизация и реконструкция гальванических цехов',
+						src: '../img/content/project/02.jpg'
+					})
+				.slider__item
+					+project({
+						text: 'Модернизация и реконструкция гальванических цехов',
+						src: '../img/content/project/02.jpg'
+					})
