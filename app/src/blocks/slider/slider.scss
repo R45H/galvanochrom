@@ -15,6 +15,7 @@ $name: slider;
 			padding-bottom: 0;
 		}
 	}
+
 	/* Arrows */
 	.slick-prev,
 	.slick-next {
@@ -136,6 +137,17 @@ $name: slider;
 		button {
 			background: $color-second;
 			opacity: 1;
+		}
+	}
+
+	&_dots_left{
+		.#{$name}__item {
+			padding-bottom: 0;
+			height: 70vh;
+		}
+
+		.slick-dots {
+			text-align: left;
 		}
 	}
 }
