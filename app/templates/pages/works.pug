@@ -1,0 +1,50 @@
+include ../mixins/project
+
+.banner.banner_middle.mb-30
+	.container
+		.row
+			.col-12.col-md-3
+				h1.main-title
+					.main-title__title Выполненные работы
+.container
+	.row
+		.col-12
+			h2.title.mb-30 Наши проекты
+	.row.mb-30
+		.col-12
+			.slider.slider_dots_none.slider_arrows_big
+				.slider__item
+					+project({
+						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+						src: '../img/content/project/01.jpg'
+					})(class='project_height')
+				.slider__item
+					+project({
+						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+						src: '../img/content/project/01.jpg'
+					})(class='project_height')
+				.slider__item
+					+project({
+						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+						src: '../img/content/project/01.jpg'
+					})(class='project_height')
+	.row.mb-30
+		.col-12
+			.employer.mb-30
+				.text
+					p.title Заказчик:
+					p.employer__text ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
+					p.title Выполненные работы:
+					p.employer__text Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.
+			.employer.mb-30
+				.text
+					p.title Заказчик:
+					p.employer__text ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
+					p.title Выполненные работы:
+					p.employer__text Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.
+			.employer.mb-30
+				.text
+					p.title Заказчик:
+					p.employer__text ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
+					p.title Выполненные работы:
+					p.employer__text Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.

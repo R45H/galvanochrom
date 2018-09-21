@@ -6,6 +6,12 @@ $name: project;
 	display: flex;
 	flex-direction: column;
 
+	&:hover {
+		.#{$name}__text {
+			color: $color-second;
+		}
+	}
+
 	&__img {
 		width: 100%;
 		background: no-repeat center / cover;
@@ -24,10 +30,6 @@ $name: project;
 		flex-grow: 1;
 		text-align: center;
 		justify-content: center;
-
-		&:hover {
-			color: $color-second;
-		}
 	}
 
 	&_upper {
@@ -35,14 +37,18 @@ $name: project;
 	}
 
 	&_fill {
-
-		.#{$name}__text {
-
-			&:hover {
+		&:hover {
+			.#{$name}__text {
 				transition: all ease-out .5s;
 				background: $color-main;
 				color: white;
 			}
+		}
+	}
+
+	&_height {
+		.#{$name}__img {
+			padding-bottom: 50%;
 		}
 	}
 }
