@@ -116,6 +116,7 @@ $name: slider;
 	}
 
 	&_height {
+
 		.#{$name}__item {
 			padding-bottom: 0;
 			height: 70vh;
@@ -123,17 +124,21 @@ $name: slider;
 	}
 
 	&_dots_left {
+
 		.slick-dots {
 			text-align: left;
 		}
 	}
 
 	&_arrows_big {
-		.slick-prev, .slick-next {
+
+		.slick-prev,
+		.slick-next {
 			height: 100px;
 		}
 
-		 .slick-prev::before, .slick-next::before {
+		.slick-prev::before,
+		.slick-next::before {
 			top: 36%;
 		}
 	}
