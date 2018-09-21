@@ -1,5 +1,31 @@
 $name: bread;
 
 .#{$name} {
-	
+	color: white;
+	list-style-type: none;
+	font-size: 16px;
+	font-weight: normal;
+	display: flex;
+
+	&__item {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			font-family: $font-fa;
+			content: '\f105';
+			width: 10px;
+			height: 10px;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&__link {
+		color: white;
+		font-size: 16px;
+		font-weight: normal;
+		text-transform: capitalize;
+		margin-right: 10px;
+	}
 }
