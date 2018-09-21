@@ -1,6 +1,8 @@
 include ../mixins/list
+include ../mixins/advantage
+include ../mixins/project
 
-.slider.slider_dots_left.slider_height.slider_arrows_big
+.slider.slider_dots_left.slider_height.slider_arrows_big.mb-30
 	.slider__item
 		.banner.banner_middle
 			.container
@@ -28,8 +30,8 @@ include ../mixins/list
 .container
 	.row
 		.col-12
-			h2.title Выполняем проектирование и изготовление оборудования по следующим технологиям:
-		.col-4
+			h2.title.mb-30 Выполняем проектирование и изготовление оборудования по следующим технологиям:
+		.col-12.col-md-4.mb-30
 			+list([
 				{text: "ТВЕРДОЕ ХРОМИРОВАНИЕ", link: '#'},
 				{text: "НИКЕЛИРОВАНИЕ", link: '#'},
@@ -39,4 +41,83 @@ include ../mixins/list
 				{text: "МЕДНЕНИЕ", link: '#'},
 				{text: "АНОДИРОВАНИЕ", link: '#'}
 			])
-		.col-8
+		.col-12.col-md-8.mb-30
+			.banner.banner_shadow.banner_height
+				.banner__text
+					h2.title.title_white.mb-15 Твердое хромирование
+					p.white Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+
+	.row.mb-30
+		.col-12
+			h2.title.mb-30 Полный комплекс работ под ключ
+		.col-12.col-md-4
+			.description
+				.description__text.text
+					p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+					p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
+				.description__btn
+					a.btn.btn_wide(href='#') Вcе услуги
+		.col-12.col-md-8
+			.slider
+				.slider__item
+					.image
+				.slider__item
+					.image
+				.slider__item
+					.image
+	.row
+		.col-12
+			h2.title.mb-30 Наши преимущества
+		.col-12.col-sm-6.col-md-3.mb-30
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
+			})
+		.col-12.col-sm-6.col-md-3.mb-30
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
+			})
+		.col-12.col-sm-6.col-md-3.mb-30
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
+			})
+		.col-12.col-sm-6.col-md-3.mb-30
+			+advantage({
+				link: '#',
+				icon: 'factory',
+				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
+			})
+	.row.mb-30
+		.col-12
+			h2.title.mb-30 Качество и надежность продукции
+		.col-12.col-md-4
+			.description
+				.description__text.text
+					p У нашей компании 20-ти летний опыт внедрения гальванических технологий на крупных предприятиях гражданской и оборонной среды. Мы гарантируем высокое качество продукции, изготавливаемое с учетом всех современных требований.
+				.description__btn
+					a.btn.btn_wide(href='#') ПОДРОБНЕЕ О КОМПАНИИ
+		.col-12.col-md-8
+			.image
+	.row
+		.col-12.col-sm-6.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})
+		.col-12.col-sm-6.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})
+	.row.mb-30
+		.col-12
+			a.link(href="#") Cмотреть все проекты
+				i.fa.fa-angle-right
+
