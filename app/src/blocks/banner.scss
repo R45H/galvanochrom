@@ -10,6 +10,17 @@ $name: banner;
 
 	&_middle {
 		align-items: center;
+		flex-direction: column;
+
+		.#{$name}__row {
+			width: 100%;
+		}
+
+		.#{$name}__container {
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+		}
 	}
 
 	&_height {

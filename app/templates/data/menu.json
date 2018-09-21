@@ -1,0 +1,56 @@
+{
+	"menu": [
+		{
+			"link": "service.html",
+			"name": "Услуги",
+			"sub": [
+				{
+					"link": "#",
+					"name": "Страница услуги"
+				}
+			]
+		},
+		{
+			"link": "contacts.html",
+			"name": "Контакты"
+		},
+		{
+			"link": "technology.html",
+			"name": "Технологии",
+			"sub": [
+				{
+					"link": "#",
+					"name": "Твердое хромирование"
+				}
+			]
+		},
+		{
+			"link": "news.html",
+			"name": "Новости"
+		},
+		{
+			"link": "works.html",
+			"name": "Наши проекты",
+			"sub": [
+				{
+					"link": "#",
+					"name": "Страница проекта"
+				}
+			]
+		},
+		{
+			"link": "company.html",
+			"name": "О компании",
+			"sub": [
+				{
+					"link": "#",
+					"name": "Сертификаты"
+				},
+				{
+					"link": "#",
+					"name": "Команда"
+				}
+			]
+		}
+	]
+}

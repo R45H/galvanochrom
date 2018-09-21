@@ -1,16 +1,20 @@
+include ../mixins/bread
 include ../mixins/project
 
 .banner.banner_middle.mb-30
-	.container
-		.row
+	.container.banner__container
+		.row.banner__row
 			.col-12.col-md-7
 				h1.main-title
 					.main-title__title Нестандартные задачи и их решение - это наш профиль!
+	.container
+		+bread
 .container
 	.row
 		.col-12
 			h2.title.mb-30 Услуги
 		.col-12.col-sm-6.mb-30
+
 			+project({
 				text: 'Модернизация и реконструкция гальванических цехов',
 				src: '../img/content/project/01.jpg',

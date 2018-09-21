@@ -1,12 +1,15 @@
 include ../mixins/advantage
+include ../mixins/bread
 
 .banner.banner_middle.mb-30
-	.container
-		.row
+	.container.banner__container
+		.row.banner__row
 			.col-12.col-md-7
 				h1.main-title.main-title_prefix
 					span.main-title__prefix 20
 					.main-title__title Лет успешной работы
+	.container
+		+bread
 .container
 	.row
 		.col-12
