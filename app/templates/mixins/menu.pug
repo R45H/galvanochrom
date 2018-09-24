@@ -1,5 +1,5 @@
 mixin menu(data)
-	ul.menu
+	ul.menu(class= attributes.class)
 		each val in data
 			li.menu__item
 				a.menu__link(href= val.link)= val.text

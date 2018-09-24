@@ -35,15 +35,4 @@ $name: btn;
 		padding-left: 26px;
 		padding-right: 26px;
 	}
-
-	&_hamburger {
-		color: #fff;
-		width: 18px;
-		height: 22px;
-		padding: 0;
-
-		@include screen-md() {
-			display: none;
-		}
-	}
 }

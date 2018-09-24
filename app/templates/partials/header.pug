@@ -28,9 +28,9 @@ header.header
 	.header__bottom
 		.container
 			.row.header__bottom-content
-				.col-9
+				.col-10.col-lg-9
 					nav
-						button.btn.btn_hamburger
+						button.toggle
 							i.fa.fa-bars
 						+menu([
 							{text: "УСЛУГИ", link: '#'},
@@ -39,7 +39,7 @@ header.header
 							{text: "О КОМПАНИИ", link: '#'},
 							{text: "НАШИ ПРОЕКТЫ", link: '#'},
 							{text: "КОНТАКТЫ", link: '#'}
-						])
-				.col-3
+						])(class="js-menu")
+				.col-2.col-lg-3
 					.header__btn
 						+select(select)

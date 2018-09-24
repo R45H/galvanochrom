@@ -7,6 +7,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/select/select.js'
 	}());
+	(function() {
+		//=require 'blocks/toggle/toggle.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
