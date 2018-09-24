@@ -5,8 +5,10 @@ $name: menu;
 
 	@include screen-md() {
 		display: flex !important;
-		justify-content: space-between;
 		align-items: center;
+		overflow: hidden;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 	}
 
 	&__link {
@@ -14,6 +16,10 @@ $name: menu;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 600;
+		display: block;
+		@include screen-md() {
+			padding: 24px 21px;
+		}
 	}
 
 	&__item {

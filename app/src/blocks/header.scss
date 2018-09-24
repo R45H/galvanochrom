@@ -23,12 +23,19 @@ $name: header;
 
 	&__bottom {
 		background: $color-main;
+		overflow: hidden;
 	}
 
 	&__bottom-content {
 		@include screen-md() {
 			display: flex;
 			align-items: center;
+		}
+
+		.menu {
+			@include screen-md() {
+				margin-left: -20px;
+			}
 		}
 	}
 
