@@ -1,0 +1,31 @@
+$name: input;
+
+.#{$name} {
+	background: transparent;
+	width: 100%;
+	color: $color-text;
+	border: 2px solid $color-gray;
+	padding: 10px;
+	border-radius: 0;
+	appearance: none;
+	font-family: $font-main;
+	font-weight: normal;
+	outline: none;
+	display: block;
+
+	@include input-autofill($color-text);
+
+	@include input-placeholder {
+		color: $color-gray;
+		font-weight: 300;
+		transition: all ease-out .5s;
+	}
+
+	&:focus {
+		border-color: $color-main;
+	}
+
+	&_error {
+		border: 2px solid $color-second;
+	}
+}

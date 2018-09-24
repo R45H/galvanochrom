@@ -1,14 +1,16 @@
 include ../mixins/bread
 include ../mixins/project
 
-.banner.banner_middle.mb-30
-	.container.banner__container
-		.row.banner__row
-			.col-12.col-md-7
-				h1.main-title
-					.main-title__title Нестандартные задачи и их решение - это наш профиль!
-	.container
-		+bread
+.slider.slider_height.mb-30
+	.slider__item
+		.banner.banner_middle.mb-30
+			.container.banner__container
+				.row.banner__row
+					.col-12.col-md-7
+						h1.main-title
+							.main-title__title Нестандартные задачи и их решение - это наш профиль!
+			.container
+				+bread
 .container
 	.row
 		.col-12

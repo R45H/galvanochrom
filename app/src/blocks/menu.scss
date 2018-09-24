@@ -17,6 +17,7 @@ $name: menu;
 		text-transform: uppercase;
 		font-weight: 600;
 		display: block;
+
 		@include screen-md() {
 			padding: 24px 21px;
 		}

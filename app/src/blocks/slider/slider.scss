@@ -120,6 +120,7 @@ $name: slider;
 		.#{$name}__item {
 			padding-bottom: 0;
 			height: 70vh;
+			min-height: 500px;
 		}
 	}
 
