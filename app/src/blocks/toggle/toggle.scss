@@ -17,6 +17,7 @@ $name: toggle;
 	height: 22px;
 	padding: 0;
 	border: none;
+	margin-top: 10px;
 
 	@include screen-md() {
 		display: none;

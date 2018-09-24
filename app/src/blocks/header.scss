@@ -5,6 +5,10 @@ $name: header;
 
 	&__logo {
 		margin-top: 10px;
+
+		@include screen-sm(max) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__top {
@@ -22,8 +26,10 @@ $name: header;
 	}
 
 	&__bottom-content {
-		display: flex;
-		align-items: center;
+		@include screen-md() {
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	&__contacts {
