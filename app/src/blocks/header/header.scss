@@ -119,10 +119,9 @@ $name: header;
 		overflow: hidden;
 
 		@include screen-md() {
-			flex-direction: row;
+			flex-flow: row wrap;
 			align-items: center;
 			justify-content: space-between;
-			flex-wrap: wrap;
 		}
 	}
 

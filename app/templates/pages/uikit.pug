@@ -5,6 +5,7 @@ include ../mixins/advantage
 include ../mixins/logo
 include ../mixins/news
 include ../mixins/bread
+include ../mixins/employer
 
 .container
 	.row.mb-30
@@ -219,7 +220,7 @@ include ../mixins/bread
 								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
 .container
 	.row.mb-30
-		.col-12
+		.col
 			.slider.slider_dots_none.slider_arrows_big
 				.slider__item
 					+project({
@@ -238,7 +239,7 @@ include ../mixins/bread
 					})
 
 	.row
-		.col-12.mb-30
+		.col.mb-30
 			+news({
 				date: '5 августа 2018 года',
 				title: 'Завершена поставка оборудования для ОАО «Северский Трубный Завод»',
@@ -258,13 +259,9 @@ include ../mixins/bread
 				p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности.</p><p> Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
 
 	.row
-		.col-12
-			.employer.mb-30
-				.text
-					p.title Заказчик:
-					p.employer__text ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
-					p.title Выполненные работы:
-					p.employer__text Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.
+		.col.mb-30
+			+employer(employer)
+
 .container
 	.row.mb-30
 		.col-sm-4
