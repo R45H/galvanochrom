@@ -1,0 +1,123 @@
+$name: header;
+
+.#{$name} {
+	flex: 0 0 auto;
+
+	&__logo {
+		margin-top: 10px;
+
+		@include screen-sm(max) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__top {
+		background: white;
+		padding: 10px 0;
+	}
+
+	&__top-content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__bottom {
+		background: $color-main;
+		overflow: hidden;
+		padding: 15px 0;
+
+		@include screen-md() {
+			padding: 0;
+		}
+	}
+
+	&__bottom-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@include screen-sm() {
+			margin: 0 -15px;
+		}
+
+		@include screen-md() {
+			align-items: stretch;
+			margin: 0 -10px;
+		}
+
+		@include screen-lg() {
+			margin: 0 -20px;
+		}
+	}
+
+	&__menu-wrap {
+
+	}
+
+	&__menu {
+		padding-top: 15px;
+
+		@include screen-md() {
+			padding-top: 0;
+		}
+
+		&_mobile-hidden {
+			display: none;
+
+			@include screen-md() {
+				display: flex;
+			}
+		}
+	}
+
+	&__toggle {
+
+		@include screen-md() {
+			display: none;
+		}
+	}
+
+	&__select-wrap {
+		flex: none;
+	}
+
+	&__select {
+		height: 100%;
+		min-height: 38px;
+
+		.select__current {
+			padding: 9px 35px 9px 15px;
+			font-size: 15px;
+
+			@include screen-md() {
+				padding: 24px 30px 24px 10px;
+			}
+
+			@include screen-lg() {
+				font-size: 16px;
+				padding: 24px 45px 24px 20px;
+			}
+
+			&::after {
+				right: 15px;
+
+				@include screen-md() {
+					right: 10px;
+				}
+
+				@include screen-lg() {
+					right: 20px;
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include screen-lg() {
+			flex-wrap: nowrap;
+		}
+	}
+}

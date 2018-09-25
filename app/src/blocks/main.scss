@@ -2,4 +2,8 @@ $name: main;
 
 .#{$name} {
 	flex: 1 0 auto;
+
+	&__fill {
+		background-color: $color-main;
+	}
 }

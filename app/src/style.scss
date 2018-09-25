@@ -25,13 +25,13 @@
 @import 'blocks/news'; // Новости
 @import 'blocks/employer'; // Заказчик
 @import 'blocks/bread'; // Хлебные крошки
-@import 'blocks/toggle/toggle'; // Гамбургер
+@import 'blocks/toggle'; // Гамбургер
 @import 'blocks/input'; // Окно ввода
 /* Blocks will be inserted here */
 // =====
 
 // Внешние контейнеры
-@import 'blocks/header'; // Шапка
+@import 'blocks/header/header'; // Шапка
 @import 'blocks/footer'; // Подвал
 @import 'blocks/section'; // Секция контента
 @import 'blocks/main'; // Контейнер контента

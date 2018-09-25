@@ -4,7 +4,7 @@ $name: menu;
 	list-style-type: none;
 
 	@include screen-md() {
-		display: flex !important;
+		display: flex;
 		align-items: center;
 		overflow: hidden;
 		flex-wrap: wrap;
@@ -15,23 +15,26 @@ $name: menu;
 		color: white;
 		text-decoration: none;
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: bold;
 		display: block;
+		padding: 10px 15px;
+		font-size: 15px;
 
 		@include screen-md() {
-			padding: 24px 21px;
+			padding: 24px 10px;
+		}
+
+		@include screen-lg() {
+			font-size: 16px;
+			padding: 24px 20px;
 		}
 	}
 
 	&__item {
-		padding: 5px 0;
+		padding: 0;
 
 		&:hover {
 			background: $color-main-active;
-		}
-
-		@include screen-md() {
-			padding: 0;
 		}
 	}
 }

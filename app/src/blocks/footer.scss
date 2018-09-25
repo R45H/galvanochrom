@@ -5,10 +5,54 @@ $name: footer;
 
 	&__top {
 		background: $color-main;
+		padding: 15px 0;
+
+		@include screen-md() {
+			padding: 0;
+		}
 	}
 
 	&__top-content {
 		align-items: center;
+
+		@include screen-sm() {
+			margin-right: -15px;
+		}
+
+		@include screen-md() {
+			margin-right: -10px;
+		}
+
+		@include screen-lg() {
+			margin-right: -20px;
+		}
+	}
+
+	&__logo {
+		max-width: 350px;
+		margin: 0 auto 15px;
+
+		@include screen-sm() {
+			margin: 0;
+			padding: 10px 0;
+		}
+	}
+
+	&__menu-outer {
+
+		@include screen-sm() {
+			padding-right: 0;
+		}
+	}
+
+	&__menu-wrap {
+		text-align: center;
+
+		@include screen-sm() {
+			text-align: left;
+			display: flex;
+			justify-content: flex-end;
+		}
 	}
 
 	&__bottom-content {

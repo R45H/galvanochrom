@@ -27,19 +27,16 @@ header.header
 								a.contacts-item__phone(href='tel: 89219441109 ') +7 (921) 944-11-09
 	.header__bottom
 		.container
-			.row.header__bottom-content
-				.col-10.col-sm-11
-					nav
-						button.toggle
-							i.fa.fa-bars
-						+menu([
-							{text: "УСЛУГИ", link: '#'},
-							{text: "ТЕХНОЛОГИИ", link: '#'},
-							{text: "НОВОСТИ", link: '#'},
-							{text: "О КОМПАНИИ", link: '#'},
-							{text: "НАШИ ПРОЕКТЫ", link: '#'},
-							{text: "КОНТАКТЫ", link: '#'}
-						])(class="js-menu")
-				.col-2.col-sm-1
-					.header__btn
-						+select(select)
+			.header__bottom-content
+				nav.header__menu-wrap
+					button.toggle.header__toggle
+					+menu([
+						{text: "Услуги", link: '#'},
+						{text: "Технологии", link: '#'},
+						{text: "Новости", link: '#'},
+						{text: "О компании", link: '#'},
+						{text: "Наши проекты", link: '#'},
+						{text: "Контакты", link: '#'}
+					])(class="header__menu header__menu_mobile-hidden")
+				.header__select-wrap
+					+select(select)(class='header__select')

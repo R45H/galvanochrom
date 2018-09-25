@@ -1,0 +1,24 @@
+$name: toggle;
+
+.#{$name} {
+	display: inline-block;
+	background-color: transparent;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1;
+	outline: none;
+	font-weight: normal;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+
+	&:hover {
+		background: $color-main-active;
+	}
+
+	&::after {
+		content: '\f0c9';
+		font-family: $font-fa;
+	}
+}

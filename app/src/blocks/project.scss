@@ -7,6 +7,7 @@ $name: project;
 	flex-direction: column;
 
 	&:hover {
+
 		.#{$name}__text {
 			color: $color-second;
 		}
@@ -37,7 +38,9 @@ $name: project;
 	}
 
 	&_fill {
+
 		&:hover {
+
 			.#{$name}__text {
 				transition: all ease-out .5s;
 				background: $color-main;
@@ -47,6 +50,7 @@ $name: project;
 	}
 
 	&_height {
+
 		.#{$name}__img {
 			padding-bottom: 50%;
 		}

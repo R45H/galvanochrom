@@ -27,7 +27,17 @@ include ../mixins/bread
 							li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
 
 	.row
-		.col-3.mb-30
+		.col-sm-3.mb-30.main__fill
+			+select(select)
+		.col-sm-3.mb-30.main__fill
+			+select(select)(class='select_wide')
+
+	.row
+		.col-sm-3.mb-30.main__fill
+			button.toggle
+
+	.row
+		.col-sm-3.mb-30
 			a.link(href='#') .link
 
 	.row
@@ -52,7 +62,7 @@ include ../mixins/bread
 		.col-12
 			h2.title.title_white Производство гальванического оборудования
 	.row.mb-30
-		.col-3
+		.col-sm-6.col-lg-3
 			+list([
 				{text: "Твердое хромирование", link: '#'},
 				{text: "Никелирование", link: '#'},
@@ -64,35 +74,35 @@ include ../mixins/bread
 			])
 
 	.row.mb-30
-		.col-4
+		.col-sm-4
 			+logo
 
 	.row
-		.col-3.mb-30
+		.col-sm-4.col-md-3.mb-30
 			.btn .btn
-		.col-3.mb-30
+		.col-sm-4.col-md-3.mb-30
 			a.btn(href='#') a.btn
-		.col-3.mb-30
+		.col-sm-4.col-md-3.mb-30
 			button.btn button.btn
-		.col-3.mb-30
+		.col-sm-4.col-md-3.mb-30
 			input.btn(type='button' value='input.btn')
-		.col-3.mb-30
+		.col-sm-4.col-md-3.mb-30
 			.btn.btn_wide .btn.btn_wide
 
-	.row.mb-30
-		.col-3
+	.row
+		.col-md-3.mb-30
 			+advantage({
 				link: '#',
 				icon: 'factory',
 				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
 			})
-		.col-3
+		.col-md-3.mb-30
 			+advantage({
 				link: '#',
 				icon: 'factory',
 				text: 'Наша команда'
 			})(class='advantage_strong')
-		.col-6
+		.col-md-6.mb-30
 			+advantage({
 				link: '#',
 				icon: 'factory',
@@ -100,19 +110,19 @@ include ../mixins/bread
 			})(class='advantage_horizontal')
 
 	.row
-		.col-4.mb-30
+		.col-md-4.mb-30
 			+project({
 				text: 'Модернизация и реконструкция гальванических цехов',
 				src: '../img/content/project/01.jpg',
 				link: '#'
 			})
-		.col-4.mb-30
+		.col-md-4.mb-30
 			+project({
 				text: 'Модернизация и реконструкция гальванических цехов',
 				src: '../img/content/project/01.jpg',
 				link: '#'
 			})(class='project_upper')
-		.col-4.mb-30
+		.col-md-4.mb-30
 			+project({
 				text: 'Модернизация и реконструкция гальванических цехов',
 				src: '../img/content/project/01.jpg',
@@ -120,7 +130,7 @@ include ../mixins/bread
 			})(class='project_fill')
 
 	.row.mb-30
-		.col-4
+		.col-md-4
 			.description
 				.description__text.text
 					p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
@@ -128,8 +138,8 @@ include ../mixins/bread
 				.description__btn
 					a.btn.btn_wide(href='#') Все услуги
 
-	.row.mb-30
-		.col-6
+	.row
+		.col-sm-6.mb-30
 			.slider
 				.slider__item
 					.image
@@ -137,7 +147,7 @@ include ../mixins/bread
 					.image
 				.slider__item
 					.image
-		.col-6
+		.col-sm-6.mb-30
 			.slider.slider_dots_left
 				.slider__item
 					.image
@@ -145,7 +155,7 @@ include ../mixins/bread
 					.image
 				.slider__item
 					.image
-		.col-6
+		.col-sm-6.mb-30
 			.slider.slider_arrows_big
 				.slider__item
 					.image
@@ -218,7 +228,7 @@ include ../mixins/bread
 					p.employer__text Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.
 .container
 	.row.mb-30
-		.col-4
+		.col-sm-4
 			input.mb-15.input(placeholder="alex@mail.ru")
 			input.mb-15.input.input_error(placeholder="1234")
 

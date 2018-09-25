@@ -3,23 +3,23 @@ footer.footer
 	.footer__top
 		.container
 			.row.footer__top-content
-				.col-12.col-md-3.hidden-sm
+				.col-sm-7.col-md-4.col-lg-3
 					.footer__logo
 						+logo
-				.col-12.col-md-9
-					nav
+				.col-sm-5.col-md-8.col-lg-9.footer__menu-outer
+					nav.footer__menu-wrap
 						+menu([
 							{text: "Услуги", link: '#'},
 							{text: "Технологии", link: '#'},
 							{text: "Новости", link: '#'},
 							{text: "О компании", link: '#'},
-							{text: "Наши ПРОЕКТЫ", link: '#'},
+							{text: "Наши проекты", link: '#'},
 							{text: "Контакты", link: '#'}
 						])
 	.footer__bottom
 		.container
 			.row
-				.col-12.footer__bottom-content
+				.col.footer__bottom-content
 					.footer__contacts
 						.contacts-item
 							+svg('message', 'contacts-item__icon')

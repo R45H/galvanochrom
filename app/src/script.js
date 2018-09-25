@@ -8,7 +8,7 @@ $(function() {
 		//=require 'blocks/select/select.js'
 	}());
 	(function() {
-		//=require 'blocks/toggle/toggle.js'
+		//=require 'blocks/header/header.js'
 	}());
 	/* Blocks will be inserted here */
 });

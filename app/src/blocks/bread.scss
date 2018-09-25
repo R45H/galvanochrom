@@ -22,6 +22,7 @@ $name: bread;
 		}
 
 		&:last-child {
+
 			&::after {
 				content: '';
 			}
