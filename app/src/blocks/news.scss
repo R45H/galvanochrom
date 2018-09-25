@@ -10,6 +10,37 @@ $name: news;
 		flex-direction: row;
 	}
 
+	&:hover,
+	&:active {
+
+		.#{$name} {
+
+			&__date {
+				color: inherit;
+			}
+		}
+	}
+
+	&:hover {
+
+		.#{$name} {
+
+			&__text-wrap {
+				color: $color-second;
+			}
+		}
+	}
+
+	&:active {
+
+		.#{$name} {
+
+			&__text-wrap {
+				color: $color-second-active;
+			}
+		}
+	}
+
 	&__img-wrap {
 		width: 100%;
 		flex: none;
@@ -21,27 +52,27 @@ $name: news;
 
 	&__img {
 		width: 100%;
-		padding-bottom: 80%;
+		padding-bottom: 70%;
 		height: 100%;
 		background: no-repeat center / cover;
 	}
 
 	&__text-wrap {
-		padding: 20px;
+		padding: 15px;
+
+		@include screen-sm() {
+			padding: 25px;
+		}
 
 		@include screen-lg() {
-			padding-right: 60px;
+			padding-left: 6rem;
 		}
 	}
 
-	&__text {
-		font-size: 20px;
-		min-height: 105px;
-		position: relative;
-	}
-
 	&__date {
-		margin-bottom: 20px;
+		color: $color-gray;
+		font-size: 16px;
+		margin-bottom: 15px;
 	}
 
 	&__title {
@@ -61,6 +92,17 @@ $name: news;
 				&__text-wrap {
 					transition: all ease-out .5s;
 					background: $color-main;
+					color: white;
+				}
+			}
+		}
+
+		&:active {
+
+			.#{$name} {
+
+				&__text-wrap {
+					background: $color-main-active;
 					color: white;
 				}
 			}
