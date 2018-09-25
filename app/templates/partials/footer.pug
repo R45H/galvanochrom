@@ -1,11 +1,14 @@
 // FOOTER
 footer.footer
+
 	.footer__top
 		.container
 			.row.footer__top-content
+
 				.col-sm-7.col-md-4.col-lg-3
 					.footer__logo
 						+logo
+
 				.col-sm-5.col-md-8.col-lg-9.footer__menu-outer
 					nav.footer__menu-wrap
 						+menu([
@@ -16,22 +19,31 @@ footer.footer
 							{text: "Наши проекты", link: '#'},
 							{text: "Контакты", link: '#'}
 						])
+
 	.footer__bottom
 		.container
-			.row
-				.col.footer__bottom-content
-					.footer__contacts
-						.contacts-item
-							+svg('message', 'contacts-item__icon')
-							p
-								a.contacts-item__link(href='mailto: manager@galvanochrom.ru') manager@galvanochrom.ru
-						.contacts-item
-							+svg('phone', 'contacts-item__icon')
-							p
-								a.contacts-item__phone(href='tel: 89219441109 ') +7 (921) 944-11-09
+			.row.footer__bottom-content
 
+				.col-sm-6.col-md-4.footer__col.footer__col_left
+					.footer__contacts
+
+						.footer__contact
+							a.link.contacts-item.contacts-item_bold(href='tel:89219441109')
+								+svg('phone', 'contacts-item__icon')
+								.contacts-item__text
+									.contacts-item__text-gray +7 (921)
+									|
+									| 944-11-09
+
+						.footer__contact
+							a.link.contacts-item(href='mailto: manager@galvanochrom.ru')
+								+svg('message', 'contacts-item__icon')
+								.contacts-item__text manager@galvanochrom.ru
+
+				.col-sm-6.col-md-4.footer__col.footer__col_center
 					p.footer__copyright &copy; 2018 ООО «Гальванохром»
 
+				.col-md-4.footer__col.footer__col_right
 					p.webc
 						| Разработано в
 						a.webc(title='Золотой партнёр 1C-Битрикс. Web-разработка и системная интеграция', href='https://webcenter.pro/', target='_blank', rel='nofollow')

@@ -41,6 +41,30 @@ include ../mixins/bread
 			a.link(href='#') .link
 
 	.row
+		.col-sm-3.mb-30
+			.contacts-item
+				+svg('message', 'contacts-item__icon')
+				.contacts-item__text .contacts-item
+		.col-sm-4.mb-30
+			.contacts-item.contacts-item_bold
+				+svg('message', 'contacts-item__icon')
+				.contacts-item__text .contacts-item.contacts-item_bold
+		.col-sm-4.mb-30
+			.contacts-item.contacts-item_icon_lg
+				+svg('message', 'contacts-item__icon')
+				.contacts-item__text .contacts-item.contacts-item_icon_lg
+		.col-sm-3.mb-30
+			a.contacts-item.link(href='#')
+				+svg('message', 'contacts-item__icon')
+				.contacts-item__text a.contacts-item
+		.col-sm-3.mb-30
+			a.contacts-item.link(href='#')
+				+svg('message', 'contacts-item__icon')
+				.contacts-item__text
+					.contacts-item__text-gray .contacts
+					| -item
+
+	.row
 		.col-12.mb-30
 			h2.main-title
 				.main-title__title Производство гальванического оборудования

@@ -4,16 +4,16 @@ $name: header;
 	flex: 0 0 auto;
 
 	&__logo {
-		margin-top: 10px;
+		margin-bottom: 15px;
 
-		@include screen-sm(max) {
-			margin-bottom: 20px;
+		@include screen-sm() {
+			margin-bottom: 0;
 		}
 	}
 
 	&__top {
 		background: white;
-		padding: 10px 0;
+		padding: 15px 0;
 	}
 
 	&__top-content {
@@ -114,10 +114,20 @@ $name: header;
 
 	&__contacts {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		margin: 0 -15px -15px;
+		overflow: hidden;
 
-		@include screen-lg() {
-			flex-wrap: nowrap;
+		@include screen-md() {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
 		}
+	}
+
+	&__contact {
+		display: flex;
+		padding: 0 15px 15px;
 	}
 }

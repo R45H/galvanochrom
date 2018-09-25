@@ -55,24 +55,61 @@ $name: footer;
 		}
 	}
 
-	&__bottom-content {
-		padding: 10px 15px;
-		text-align: center;
+	&__bottom {
+		padding: 15px 0;
+	}
 
-		@include screen-sm() {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
+	&__bottom-content {
+		align-items: center;
+	}
+
+	&__col {
+		text-align: center;
+		margin-bottom: 15px;
+
+		@include screen-md() {
+			margin-bottom: 0;
 		}
 
-		.contacts-item {
-			justify-content: flex-start;
-			width: 100%;
+		&:last-child {
+			margin-bottom: 0;
+		}
 
-			&__icon {
-				width: 23px;
-				height: 24px;
+		&_left {
+
+			@include screen-sm() {
+				text-align: left;
 			}
+		}
+
+		&_center {
+
+			@include screen-sm() {
+				text-align: right;
+			}
+
+			@include screen-md() {
+				text-align: center;
+			}
+		}
+
+		&_right {
+
+			@include screen-md() {
+				text-align: right;
+			}
+		}
+	}
+
+	&__contacts {
+
+	}
+
+	&__contact {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

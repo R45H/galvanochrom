@@ -9,22 +9,28 @@ header.header
 	.header__top
 		.container
 			.row.header__top-content
-				.col-12.col-sm-4.col-md-3
+				.col-sm-5.col-md-4.col-lg-3
 					.header__logo
 						+logo
-				.col-12.col-sm-8.col-md-9
+				.col-sm-7.col-md-8.col-lg-9
 					.header__contacts
-						.contacts-item
-							+svg('location', 'contacts-item__icon')
-							p г. Санкт-Петербург Уманский пер., д. 71 (здание "Трест-101")
-						.contacts-item
-							+svg('message', 'contacts-item__icon')
-							p
-								a.contacts-item__link(href='mailto: manager@galvanochrom.ru') manager@galvanochrom.ru
-						.contacts-item
-							+svg('phone', 'contacts-item__icon')
-							p
-								a.contacts-item__phone(href='tel: 89219441109 ') +7 (921) 944-11-09
+
+						.header__contact
+							.contacts-item.contacts-item_icon_lg
+								+svg('location', 'contacts-item__icon')
+								.contacts-item__text г. Санкт-Петербург
+									br
+									| Уманский пер., д. 71 (здание "Трест-101")
+
+						.header__contact
+							a.link.link_nowrap.contacts-item.contacts-item_icon_lg(href='mailto:manager@galvanochrom.ru')
+								+svg('message', 'contacts-item__icon')
+								.contacts-item__text manager@galvanochrom.ru
+
+						.header__contact
+							a.link.link_nowrap.contacts-item.contacts-item_icon_lg.contacts-item_bold(href='tel:+79219441109')
+								+svg('phone', 'contacts-item__icon')
+								.contacts-item__text +7 (921) 944-11-09
 	.header__bottom
 		.container
 			.header__bottom-content

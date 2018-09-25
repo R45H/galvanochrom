@@ -1,41 +1,49 @@
 $name: contacts-item;
 
 .#{$name} {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	width: 100%;
-	padding-bottom: 5px;
-	padding-right: 5px;
+	border: none;
 
-	@include screen-md() {
-		width: 50%;
-		padding-bottom: 0;
-	}
+	&:hover,
+	&:active {
 
-	@include screen-lg() {
-		justify-content: flex-end;
-		width: 100%;
-	}
+		.#{$name} {
+			// =====
 
-	a {
-		color: $color-text;
-		text-decoration: none;
-	}
-
-	&__phone {
-		font-weight: 700;
+			&__text-gray{
+				color: inherit;
+			}
+		}
 	}
 
 	&__icon {
 		fill: $color-second;
-		margin-right: 6px;
+		margin-right: 8px;
 		flex: none;
-		height: 21px;
-		width: 20px;
+		height: 20px;
+		width: 23px;
+	}
 
-		@include screen-md() {
-			height: 32px;
-			width: 42px;
+	&__text-gray {
+		display: inline;
+		color: $color-gray;
+	}
+
+	&_bold {
+		font-weight: bold;
+	}
+
+	&_icon_lg {
+
+		.#{$name} {
+			// =====
+
+			&__icon {
+				height: 28px;
+				width: 40px;
+				margin-right: 12px;
+			}
 		}
 	}
 }
