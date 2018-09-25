@@ -1,16 +1,22 @@
 include ../mixins/bread
 include ../mixins/project
 
-.slider.slider_height.mb-30
-	.slider__item
-		.banner.banner_middle.mb-30
-			.container.banner__container
-				.row.banner__row
-					.col-12.col-md-7
-						h1.main-title
-							.main-title__title Нестандартные задачи и их решение - это наш профиль!
-			.container
-				+bread
+.mb-60
+	.slider.slider_dots_left.slider_arrows_big.slider_height_full
+
+		.slider__item
+			.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						.text
+							.container
+								.row
+									.col-md-9.col-lg-8.col-xl-7
+										h1.main-title
+											.main-title__title Нестандартные задачи и их решение - это наш профиль!
+				.container.banner__bread
+					+bread
+
 .container
 	.row
 		.col-12

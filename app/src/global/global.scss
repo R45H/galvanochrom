@@ -64,6 +64,7 @@ a {
 
 	&:not([class]),
 	&[class=''] {
+		outline: none;
 		color: $color-text;
 		text-decoration: none;
 		border-bottom: 1px solid;
@@ -166,6 +167,10 @@ svg {
 
 .mb-30 {
 	margin-bottom: 30px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
 }
 
 .white {

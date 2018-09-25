@@ -10,7 +10,7 @@ include ../mixins/employer
 .container
 	.row.mb-30
 
-	.row.mb-30
+	.row.main__separator.mb-30
 		.col-12
 			.text
 				h1 Производство
@@ -27,21 +27,21 @@ include ../mixins/employer
 							li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
 							li Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
 
-	.row
+	.row.main__separator
 		.col-sm-3.mb-30.main__fill
 			+select(select)
 		.col-sm-3.mb-30.main__fill
 			+select(select)(class='select_wide')
 
-	.row
+	.row.main__separator
 		.col-sm-3.mb-30.main__fill
 			button.toggle
 
-	.row
+	.row.main__separator
 		.col-sm-3.mb-30
 			a.link(href='#') .link
 
-	.row
+	.row.main__separator
 		.col-sm-3.mb-30
 			.contacts-item
 				+svg('message', 'contacts-item__icon')
@@ -65,7 +65,7 @@ include ../mixins/employer
 					.contacts-item__text-gray .contacts
 					| -item
 
-	.row
+	.row.main__separator
 		.col-12.mb-30
 			h2.main-title
 				.main-title__title Производство гальванического оборудования
@@ -80,13 +80,13 @@ include ../mixins/employer
 				span.main-title__prefix 20
 				.main-title__title Лет успешной работы
 
-	.row.mb-30
-		.col-12
+	.row.main__separator
+		.col-12.mb-30
 			h2.title Производство гальванического оборудования
-	.row.mb-30
-		.col-12
+		.col-12.mb-30
 			h2.title.title_white Производство гальванического оборудования
-	.row.mb-30
+
+	.row.main__separator.mb-30
 		.col-sm-6.col-lg-3
 			+list([
 				{text: "Твердое хромирование", link: '#'},
@@ -98,11 +98,11 @@ include ../mixins/employer
 				{text: "Анодирование", link: '#'}
 			])
 
-	.row.mb-30
+	.row.main__separator.mb-30
 		.col-sm-4
 			+logo
 
-	.row
+	.row.main__separator
 		.col-sm-4.col-md-3.mb-30
 			.btn .btn
 		.col-sm-4.col-md-3.mb-30
@@ -114,7 +114,7 @@ include ../mixins/employer
 		.col-sm-4.col-md-3.mb-30
 			.btn.btn_wide .btn.btn_wide
 
-	.row
+	.row.main__separator
 		.col-md-3.mb-30
 			+advantage({
 				link: '#',
@@ -134,7 +134,7 @@ include ../mixins/employer
 				text: 'Наша команда'
 			})(class='advantage_horizontal')
 
-	.row
+	.row.main__separator
 		.col-md-4.mb-30
 			+project({
 				text: 'Модернизация и реконструкция гальванических цехов',
@@ -154,7 +154,7 @@ include ../mixins/employer
 				link: '#'
 			})(class='project_fill')
 
-	.row.mb-30
+	.row.main__separator.mb-30
 		.col-md-4
 			.description
 				.description__text.text
@@ -162,12 +162,38 @@ include ../mixins/employer
 					p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
 				.description__btn
 					a.btn.btn_wide(href='#') Все услуги
-					
-	.row.mb-30
+
+	.row.main__separator
+
+		.col-md-6.mb-30
+			.banner(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						h2.title.title_white.mb-15 Твердое хромирование
+						.text
+							p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+
+		.col-md-6.mb-30
+			.banner.banner_valign_center(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						h2.title.title_white.mb-15 Твердое хромирование
+						.text
+							p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+
+		.col-md-6.mb-30
+			.banner.banner_shadow_left(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						h2.title.title_white.mb-15 Твердое хромирование
+						.text
+							p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+
+	.row.main__separator.mb-30
 		.col-sm-6
 			.image(style='background-image: url("../img/content/slider/01.jpg")')
 
-	.row
+	.row.main__separator
 		.col-sm-6.mb-30
 			.slider
 				.slider__item
@@ -176,6 +202,7 @@ include ../mixins/employer
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
 				.slider__item
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
+
 		.col-sm-6.mb-30
 			.slider.slider_dots_left
 				.slider__item
@@ -184,6 +211,16 @@ include ../mixins/employer
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
 				.slider__item
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
+
+		.col-sm-6.mb-30
+			.slider.slider_dots_none
+				.slider__item
+					.image(style='background-image: url("../img/content/slider/01.jpg")')
+				.slider__item
+					.image(style='background-image: url("../img/content/slider/01.jpg")')
+				.slider__item
+					.image(style='background-image: url("../img/content/slider/01.jpg")')
+
 		.col-sm-6.mb-30
 			.slider.slider_arrows_big
 				.slider__item
@@ -192,53 +229,26 @@ include ../mixins/employer
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
 				.slider__item
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
-.mb-30
-	.slider.slider_dots_left.slider_height.slider_arrows_big.mb-30
-		.slider__item
-			.banner.banner_middle
-				.container.banner__container
-					.row.banner__row
-						.col-12.col-md-7
-							h1.main-title
-								.main-title__title Производство гальванического оборудования
-								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
-		.slider__item
-			.banner.banner_middle
-				.container.banner__container
-					.row.banner__row
-						.col-12.col-md-7
-							h1.main-title
-								.main-title__title Производство гальванического оборудования
-								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
-		.slider__item
-			.banner.banner_middle
-				.container.banner__container
-					.row.banner__row
-						.col-12.col-md-7
-							h1.main-title
-								.main-title__title Производство гальванического оборудования
-								span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
-.container
-	.row.mb-30
-		.col
-			.slider.slider_dots_none.slider_arrows_big
-				.slider__item
-					+project({
-						text: 'Модернизация и реконструкция гальванических цехов',
-						src: '../img/content/project/02.jpg'
-					})
-				.slider__item
-					+project({
-						text: 'Модернизация и реконструкция гальванических цехов',
-						src: '../img/content/project/02.jpg'
-					})
-				.slider__item
-					+project({
-						text: 'Модернизация и реконструкция гальванических цехов',
-						src: '../img/content/project/02.jpg'
-					})
 
-	.row
+.mb-30
+	.slider.slider_dots_left.slider_arrows_big.slider_height_full
+
+		- for (var i = 0; i < 3; i++) {
+			.slider__item
+				.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
+					.banner__text-wrap
+						.banner__text-i
+							.text
+								.container
+									.row
+										.col-md-7
+											h1.main-title
+												.main-title__title Производство гальванического оборудования
+												span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+		- }
+
+.container
+	.row.main__separator
 		.col.mb-30
 			+news({
 				date: '5 августа 2018 года',
@@ -258,12 +268,11 @@ include ../mixins/employer
 				p ООО «Гальванохром» завершил поставку оборудования и технологии для хромирования оправок непрерывного стана в ТПЦ – 1 с использованием технологии с частичным погружением и вращением детали, без осевого перемещения. Участок сдан в эксплуатацию. Ведется хромирование оправок.
 				p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности.</p><p> Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
 
-	.row
+	.row.main__separator
 		.col.mb-30
 			+employer(employer)
 
-.container
-	.row.mb-30
+	.row.main__separator.mb-30
 		.col-sm-4
 			input.mb-15.input(placeholder="alex@mail.ru")
 			input.mb-15.input.input_error(placeholder="1234")

@@ -6,4 +6,10 @@ $name: main;
 	&__fill {
 		background-color: $color-main;
 	}
+
+	&__separator {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $color-gray;
+	}
 }
