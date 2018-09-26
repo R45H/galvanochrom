@@ -36,13 +36,6 @@ header.header
 			.header__bottom-content
 				nav.header__menu-wrap
 					button.toggle.header__toggle
-					+menu([
-						{text: "Услуги", link: '#'},
-						{text: "Технологии", link: '#'},
-						{text: "Новости", link: '#'},
-						{text: "О компании", link: '#'},
-						{text: "Наши проекты", link: '#'},
-						{text: "Контакты", link: '#'}
-					])(class="header__menu header__menu_mobile-hidden")
+					+menu(menu)(class="header__menu header__menu_mobile-hidden")
 				.header__select-wrap
 					+select(select)(class='header__select')
