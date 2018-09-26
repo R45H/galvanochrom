@@ -49,7 +49,7 @@
 			"name": "Наши проекты",
 			"sub": [
 				{
-					"link": "#",
+					"link": "detail-works.html",
 					"name": "Страница проекта"
 				}
 			]
