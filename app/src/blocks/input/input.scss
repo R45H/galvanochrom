@@ -18,14 +18,31 @@ $name: input;
 	@include input-placeholder {
 		color: $color-gray;
 		font-weight: 300;
-		transition: all ease-out .5s;
 	}
 
 	&:focus {
 		border-color: $color-main;
+		transition: $transition;
+	}
+
+	&:active {
+		border-color: $color-main-active;
+		transition: $transition;
 	}
 
 	&_error {
 		border: 2px solid $color-second;
+
+		&:focus {
+			border-color: $color-second;
+		}
+
+		&:active {
+			border-color: $color-second-active;
+		}
 	}
+}
+
+textarea.#{$name} {
+	height: 5em;
 }

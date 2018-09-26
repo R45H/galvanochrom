@@ -271,7 +271,11 @@ include ../mixins/employer
 			+employer(employer)
 
 	.row.main__separator.mb-30
-		.col-sm-4
-			input.mb-15.input(placeholder="alex@mail.ru")
-			input.mb-15.input.input_error(placeholder="1234")
-
+		.col-sm-3.mb-15
+			input.input(type='text' placeholder=".input")
+		.col-sm-3.mb-15
+			input.input.input_error(type='text' placeholder=".input.input_error")
+		.col-sm-3.mb-15
+			input.input.input_tel(type='tel' placeholder=".input.input_tel")
+		.col-sm-3.mb-15
+			textarea.input(placeholder='textarea.input')
