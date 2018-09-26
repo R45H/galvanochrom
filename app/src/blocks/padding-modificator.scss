@@ -1,0 +1,11 @@
+$name: padding-modificator;
+
+.#{$name} {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.fancybox__bg {
+		padding-bottom: 64%;
+	}
+}
