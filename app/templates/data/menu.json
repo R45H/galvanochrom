@@ -22,7 +22,13 @@
 		},
 		{
 			"link": "news.html",
-			"name": "Новости"
+			"name": "Новости",
+			"sub": [
+				{
+					"link": "detail-news.html",
+					"name": "Страница новости"
+				}
+			]
 		},
 		{
 			"link": "company.html",

@@ -1,4 +1,4 @@
-$name: padding-modificator;
+$name: space-modificator;
 
 .#{$name} {
 	display: flex;
@@ -7,5 +7,12 @@ $name: padding-modificator;
 
 	.fancybox__bg {
 		padding-bottom: 64%;
+	}
+
+	@include screen-md(max) {
+
+		.fancybox {
+			margin-bottom: 30px;
+		}
 	}
 }

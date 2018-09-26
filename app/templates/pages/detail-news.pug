@@ -1,0 +1,66 @@
+include ../mixins/bread
+include ../mixins/fancybox
+
+.mb-60
+	.slider.slider_dots_left.slider_arrows_big.slider_height_full
+
+		.slider__item
+			.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						.text
+							.container
+								.row
+									.col-md-9.col-lg-8.col-xl-7
+										h2.main-title
+											span.main-title__title Ключевые моменты в жизни компании
+				.container.banner__bread
+					+bread
+.container
+	h1.title.mb-30= page.title
+
+	.row
+		.col-md-6.mb-30
+			+fancybox({
+				link: 'img/content/slider/01.jpg',
+				title: 'Img 1',
+				group: 'group-1',
+				bg: true
+			})
+		.col-md-6.space-modificator.mb-30
+			.row
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+			.row
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+
+	.text.mb-30
+		p.gray 5 агуста 2018 года
+		p ООО «Гальванохром» завершил поставку оборудования и технологии для хромирования оправок непрерывного стана в ТПЦ – 1 с использованием технологии с частичным погружением и вращением детали, без осевого перемещения. Участок сдан в эксплуатацию. Ведется хромирование оправок.
+		p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности.
+		p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
