@@ -284,5 +284,42 @@ include ../mixins/fancybox
 				title: 'Img 1',
 				group: 'group-1'
 			})
-
-
+	.row.main__separator.mb-30
+		.col-sm-6
+			+fancybox({
+				link: 'img/content/slider/01.jpg',
+				title: 'Img 1',
+				group: 'group-1',
+				bg: true
+			})
+		.col-sm-6.padding-modificator
+			.row
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+			.row
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})
+				.col-sm-6
+					+fancybox({
+						link: 'img/content/slider/01.jpg',
+						title: 'Img 1',
+						group: 'group-1',
+						bg: true
+					})

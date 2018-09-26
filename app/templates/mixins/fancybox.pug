@@ -8,14 +8,14 @@ mixin fancybox(data)
 
 		if data.bg
 			.fancybox__bg(
-			style='background-image: url(' + data.link + ');'
-			role='img'
-			aria-label= data.title
-			title= data.title
+				style='background-image: url(' + data.link + ');'
+				role='img'
+				aria-label= data.title
+				title= data.title
 			)
 		else
 			img(
-			src= data.link
-			alt= data.title
-			title= data.title
+				src= data.link
+				alt= data.title
+				title= data.title
 			)
