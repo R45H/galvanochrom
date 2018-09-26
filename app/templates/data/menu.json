@@ -5,7 +5,7 @@
 			"name": "Услуги",
 			"sub": [
 				{
-					"link": "#",
+					"link": "detail-service.html",
 					"name": "Страница услуги"
 				}
 			]
