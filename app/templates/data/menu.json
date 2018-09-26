@@ -15,7 +15,7 @@
 			"name": "Технологии",
 			"sub": [
 				{
-					"link": "#",
+					"link": "detail-technology.html",
 					"name": "Твердое хромирование"
 				}
 			]
