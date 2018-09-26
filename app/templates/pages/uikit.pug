@@ -6,6 +6,7 @@ include ../mixins/logo
 include ../mixins/news
 include ../mixins/bread
 include ../mixins/employer
+include ../mixins/fancybox
 
 .container
 	.row.mb-30
@@ -276,4 +277,12 @@ include ../mixins/employer
 		.col-sm-4
 			input.mb-15.input(placeholder="alex@mail.ru")
 			input.mb-15.input.input_error(placeholder="1234")
+	.row.main__separator.mb-30
+		.col-sm-4
+			+fancybox({
+				link: 'img/content/slider/01.jpg',
+				title: 'Img 1',
+				group: 'group-1'
+			})
+
 
