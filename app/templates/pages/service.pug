@@ -12,37 +12,21 @@ include ../mixins/project
 							.container
 								.row
 									.col-md-9.col-lg-8.col-xl-7
-										h1.main-title
-											.main-title__title Нестандартные задачи и их решение - это наш профиль!
+										h2.main-title
+											span.main-title__title Нестандартные задачи и их решение - это наш профиль!
 				.container.banner__bread
 					+bread
 
 .container
-	.row
-		.col-12
-			h2.title.mb-30 Услуги
-		.col-12.col-sm-6.mb-30
+	h1.title.mb-30= page.title
 
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
+	.row.mb-30
+
+		- for (var i = 0; i < 4; i++) {
+			.col-sm-6.mb-30
+				+project({
+					text: 'Модернизация и реконструкция гальванических цехов',
+					src: '../img/content/project/01.jpg',
+					link: '#'
+				})(class='project_fill')
+		- }

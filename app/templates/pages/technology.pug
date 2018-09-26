@@ -12,54 +12,21 @@ include ../mixins/bread
 							.container
 								.row
 									.col-md-9.col-lg-8.col-xl-7
-										h1.main-title
-											.main-title__title Внушительный опыт внедрения гальванических технологий на крупных предприятиях
+										h2.main-title
+											span.main-title__title Внушительный опыт внедрения гальванических технологий на крупных предприятиях
 				.container.banner__bread
 					+bread
 
 .container
-	.row
-		.col-12
-			h2.title.mb-30 Технологии
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
-		.col-12.col-sm-6.mb-30
-			+project({
-				text: 'Модернизация и реконструкция гальванических цехов',
-				src: '../img/content/project/01.jpg',
-				link: '#'
-			})(class='project_fill')
+	h1.title.mb-30= page.title
+
+	.row.mb-30
+
+		- for (var i = 0; i < 7; i++) {
+			.col-sm-6.mb-30
+				+project({
+					text: 'Модернизация и реконструкция гальванических цехов',
+					src: '../img/content/project/01.jpg',
+					link: '#'
+				})(class='project_fill')
+		- }

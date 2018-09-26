@@ -2,4 +2,28 @@ $name: link;
 
 .#{$name} {
 	@extend a:not([class]);
+
+	&_arrow {
+		position: relative;
+
+		&::after {
+			content: '\f105';
+			font-family: $font-fa;
+			vertical-align: middle;
+			font-size: 1.3em;
+			position: absolute;
+			padding-left: .4em;
+			left: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&_strong {
+		font-weight: bold;
+	}
+
+	&_upper {
+		text-transform: uppercase;
+	}
 }

@@ -13,6 +13,13 @@ $name: project;
 		}
 	}
 
+	&:active {
+
+		.#{$name}__text {
+			color: $color-second-active;
+		}
+	}
+
 	&__img {
 		width: 100%;
 		background: no-repeat center / cover;
@@ -21,9 +28,9 @@ $name: project;
 	}
 
 	&__text {
-		font-size: 20px;
-		padding: 15px 30px;
-		min-height: 105px;
+		font-size: 2rem;
+		padding: 15px;
+		min-height: 10rem;
 		position: relative;
 		color: $color-text;
 		display: flex;
@@ -31,10 +38,19 @@ $name: project;
 		flex-grow: 1;
 		text-align: center;
 		justify-content: center;
+
+		@include screen-sm() {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
 	}
 
 	&_upper {
 		text-transform: uppercase;
+	}
+
+	&_strong {
+		font-weight: bold;
 	}
 
 	&_fill {
@@ -42,14 +58,22 @@ $name: project;
 		&:hover {
 
 			.#{$name}__text {
-				transition: all ease-out .5s;
+				transition: $transition;
 				background: $color-main;
 				color: white;
 			}
 		}
+
+		&:active {
+
+			.#{$name}__text {
+				transition: $transition;
+				background: $color-main-active;
+			}
+		}
 	}
 
-	&_height {
+	&_wide {
 
 		.#{$name}__img {
 			padding-bottom: 50%;

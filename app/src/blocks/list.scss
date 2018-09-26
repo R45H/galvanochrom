@@ -18,14 +18,14 @@ $name: list;
 		}
 
 		&:hover {
-			transition: all ease-out .5s;
+			transition: $transition;
 			background: $color-main;
 			box-shadow: 0 0 10px rgba(0, 0, 0, .25);
 			color: white;
 		}
 
 		&:active {
-			transition: all ease-out .5s;
+			transition: $transition;
 			background: $color-main-active;
 			box-shadow: 0 0 10px rgba(0, 0, 0, .25);
 			color: white;

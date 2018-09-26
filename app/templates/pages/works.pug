@@ -13,35 +13,39 @@ include ../mixins/employer
 							.container
 								.row
 									.col-md-9.col-lg-8.col-xl-7
-										h1.main-title
-											.main-title__title Выполненные работы
+										h2.main-title
+											span.main-title__title Выполненные работы
 				.container.banner__bread
 					+bread
 
 .container
-	.row
-		.col-12
-			h2.title.mb-30 Наши проекты
-	.row.mb-30
-		.col-12
-			.slider.slider_dots_none.slider_arrows_big
-				.slider__item
-					+project({
-						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-						src: '../img/content/project/01.jpg'
-					})(class='project_height')
-				.slider__item
-					+project({
-						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-						src: '../img/content/project/01.jpg'
-					})(class='project_height')
-				.slider__item
-					+project({
-						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-						src: '../img/content/project/01.jpg'
-					})(class='project_height')
+	h1.title.mb-30= page.title
 
-	.row
+	.mb-60
+		.slider.slider_dots_none.slider_arrows_big
+
+			.slider__item
+				+project({
+					link: '#',
+					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+					src: '../img/content/project/01.jpg'
+				})(class='project_wide project_strong')
+
+			.slider__item
+				+project({
+					link: '#',
+					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+					src: '../img/content/project/01.jpg'
+				})(class='project_wide project_strong')
+
+			.slider__item
+				+project({
+					link: '#',
+					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+					src: '../img/content/project/01.jpg'
+				})(class='project_wide project_strong')
+
+	.row.mb-30
 
 		- for (var i = 0; i < 3; i++) {
 			.col-12.mb-30

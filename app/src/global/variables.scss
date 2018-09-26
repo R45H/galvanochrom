@@ -19,6 +19,16 @@ $point-xl: 1200px;
 $font-main: 'FiraSans', sans-serif;
 $font-fa: 'FontAwesome', sans-serif;
 
+$transition: ease-out .5s;
+
+%transition {
+
+	&:hover,
+	&:active {
+		transition: $transition;
+	}
+}
+
 // ----------------------------
 // МИКСИНЫ ДЛЯ ТЕКУЩЕГО ПРОЕКТА
 // ----------------------------

@@ -6,25 +6,23 @@ $name: 'webc';
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
-	transition: ease-out .5s;
 
 	&__icon {
 		display: block;
 		width: 50px;
 		max-height: 23px;
 		fill: $color-text;
-		transition: all ease-out .5s;
 
 		&:hover {
 
 			.cls-1 {
 				fill: $color-webcenter-2;
-				transition: ease-out .5s;
+				transition: $transition;
 			}
 
 			.cls-2 {
 				fill: $color-webcenter-1;
-				transition: ease-out .5s;
+				transition: $transition;
 			}
 		}
 	}

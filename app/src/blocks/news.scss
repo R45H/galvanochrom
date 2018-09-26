@@ -90,7 +90,7 @@ $name: news;
 			.#{$name} {
 
 				&__text-wrap {
-					transition: all ease-out .5s;
+					transition: $transition;
 					background: $color-main;
 					color: white;
 				}

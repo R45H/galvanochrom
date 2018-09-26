@@ -1,9 +1,30 @@
 $name: slider;
 
 .#{$name} {
+	overflow: hidden;
+	user-select: auto;
+
+	.slick-list {
+		margin: 0 -10px;
+	}
+
+	.slick-slide {
+
+		> div {
+			display: flex;
+		}
+	}
+
+	a {
+
+		&:focus {
+			outline: none;
+		}
+	}
 
 	&__item {
 		outline: none;
+		padding: 0 10px;
 	}
 
 	&__arrow {
@@ -180,7 +201,6 @@ $name: slider;
 
 			> div {
 				min-height: 100%;
-				display: flex;
 			}
 		}
 

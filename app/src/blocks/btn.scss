@@ -15,15 +15,14 @@ $name: btn;
 	word-break: break-word;
 	font-weight: bold;
 	padding: 13px 39px;
+	@extend %transition;
 
 	&:hover {
-		transition: all ease-out .5s;
 		background: $color-main;
 		color: #fff;
 	}
 
 	&:active {
-		transition: all ease-out .5s;
 		background: $color-main-active;
 		border: 2px solid $color-main-active;
 		color: #fff;

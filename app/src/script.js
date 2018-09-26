@@ -10,6 +10,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/header/header.js'
 	}());
+	(function() {
+		//=require 'blocks/input/input.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

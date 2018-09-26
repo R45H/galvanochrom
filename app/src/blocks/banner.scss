@@ -29,6 +29,13 @@ $name: banner;
 		justify-content: center;
 	}
 
+	&__bread {
+
+		@include screen-sm(max) {
+			width: 100%;
+		}
+	}
+
 	&_valign_center {
 
 		.#{$name} {

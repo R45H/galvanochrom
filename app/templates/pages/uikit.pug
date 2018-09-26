@@ -38,8 +38,14 @@ include ../mixins/employer
 			button.toggle
 
 	.row.main__separator
-		.col-sm-3.mb-30
+		.col-md-2.mb-30
 			a.link(href='#') .link
+		.col-md-2.mb-30
+			a.link.link_strong(href='#') .link.link_strong
+		.col-md-2.mb-30
+			a.link.link_upper(href='#') .link.link_upper
+		.col-md-2.mb-30
+			a.link.link_arrow(href='#') .link.link_arrow
 
 	.row.main__separator
 		.col-sm-3.mb-30
@@ -68,17 +74,17 @@ include ../mixins/employer
 	.row.main__separator
 		.col-12.mb-30
 			h2.main-title
-				.main-title__title Производство гальванического оборудования
+				span.main-title__title Производство гальванического оборудования
 
 		.col-12.mb-30
 			h2.main-title
-				.main-title__title Производство гальванического оборудования
+				span.main-title__title Производство гальванического оборудования
 				span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
 
 		.col-12.mb-30
 			h2.main-title.main-title_prefix
 				span.main-title__prefix 20
-				.main-title__title Лет успешной работы
+				span.main-title__title Лет успешной работы
 
 	.row.main__separator
 		.col-12.mb-30
@@ -88,15 +94,7 @@ include ../mixins/employer
 
 	.row.main__separator.mb-30
 		.col-sm-6.col-lg-3
-			+list([
-				{text: "Твердое хромирование", link: '#'},
-				{text: "Никелирование", link: '#'},
-				{text: "Фосфотирование", link: '#'},
-				{text: "Цинкование", link: '#'},
-				{text: "Кадмирование", link: '#'},
-				{text: "Меднение", link: '#'},
-				{text: "Анодирование", link: '#'}
-			])
+			+list(list)
 
 	.row.main__separator.mb-30
 		.col-sm-4
@@ -116,23 +114,11 @@ include ../mixins/employer
 
 	.row.main__separator
 		.col-md-3.mb-30
-			+advantage({
-				link: '#',
-				icon: 'factory',
-				text: 'Благодаря огромному опыту мы можем разрабатывать и изготавливать.'
-			})
+			+advantage(advantage_2[0])
 		.col-md-3.mb-30
-			+advantage({
-				link: '#',
-				icon: 'factory',
-				text: 'Наша команда'
-			})(class='advantage_strong')
+			+advantage(advantage_2[0])(class='advantage_strong')
 		.col-md-6.mb-30
-			+advantage({
-				link: '#',
-				icon: 'factory',
-				text: 'Наша команда'
-			})(class='advantage_horizontal')
+			+advantage(advantage_2[0])(class='advantage_horizontal')
 
 	.row.main__separator
 		.col-md-4.mb-30
@@ -153,6 +139,18 @@ include ../mixins/employer
 				src: '../img/content/project/01.jpg',
 				link: '#'
 			})(class='project_fill')
+		.col-md-4.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})(class='project_strong')
+		.col-md-4.mb-30
+			+project({
+				text: 'Модернизация и реконструкция гальванических цехов',
+				src: '../img/content/project/01.jpg',
+				link: '#'
+			})(class='project_wide')
 
 	.row.main__separator.mb-30
 		.col-md-4
@@ -243,7 +241,7 @@ include ../mixins/employer
 									.row
 										.col-md-7
 											h1.main-title
-												.main-title__title Производство гальванического оборудования
+												span.main-title__title Производство гальванического оборудования
 												span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
 		- }
 

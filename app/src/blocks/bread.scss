@@ -4,36 +4,34 @@ $name: bread;
 	color: white;
 	list-style-type: none;
 	font-size: 16px;
-	font-weight: normal;
 	display: flex;
+	flex-wrap: wrap;
 
 	&__item {
 		position: relative;
-		margin-right: 5px;
+		margin-right: 1em;
 
 		&::after {
-			position: absolute;
-			font-family: $font-fa;
 			content: '\f105';
-			width: 10px;
-			height: 10px;
-			right: -5px;
+			font-family: $font-fa;
+			position: absolute;
 			top: 0;
+			left: 100%;
+			height: 100%;
+			width: 1em;
+			text-align: center;
 		}
 
 		&:last-child {
 
 			&::after {
-				content: '';
+				display: none;
 			}
 		}
 	}
 
 	&__link {
 		color: white;
-		font-size: 16px;
-		font-weight: normal;
 		text-transform: capitalize;
-		margin-right: 10px;
 	}
 }

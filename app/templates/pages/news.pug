@@ -12,15 +12,15 @@ include ../mixins/bread
 							.container
 								.row
 									.col-md-9.col-lg-8.col-xl-7
-										h1.main-title
-											.main-title__title Ключевые моменты в жизни компании
+										h2.main-title
+											span.main-title__title Ключевые моменты в жизни компании
 				.container.banner__bread
 					+bread
 
 .container
-	.row
-		.col-12.mb-30
-			h2.title Новости
+	h1.title.mb-30= page.title
+
+	.row.mb-30
 
 		- for (var i = 0; i < 3; i++) {
 			.col-12.mb-30
