@@ -185,7 +185,7 @@ $name: slider;
 		flex-direction: column;
 
 		@include screen-xl() {
-			min-height: calc(100vh - 142px);
+			min-height: calc(100vh - 141px);
 		}
 
 		.slick-list {

@@ -1,0 +1,20 @@
+{
+	"params": [
+		{
+			"title": "Генеральный директор:",
+			"value": "<p class='mb-5'>Ким Вячеслав Елисеевич</p><a class='link link_strong link_line_none' href='tel:+79219441109'>+7 (921) 944-11-09</a>"
+		},
+		{
+			"title": "Заместитель генерального директора:",
+			"value": "<p class='mb-5'>Васильевский Василий Васильевич</p><a class='link link_strong link_line_none' href='tel:+78123369382'>+7 (812) 336-93-82</a>"
+		},
+		{
+			"title": "Коммерческий директор:",
+			"value": "<p class='mb-5'>Васильев Виктор Владимирович</p><a class='link link_strong link_line_none' href='tel:+79219094687'>+7 (921) 909-46-87</a>"
+		},
+		{
+			"title": "Главный бухгалтер:",
+			"value": "<p class='mb-5'>Иванова Вера Александровна</p><a class='link link_strong link_line_none' href='tel:+79811211212'>+7 (981) 121 12 12</a>"
+		}
+	]
+}

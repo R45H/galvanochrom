@@ -1,0 +1,35 @@
+$name: params;
+
+.#{$name} {
+	width: 100%;
+
+	@include screen-sm() {
+		display: table;
+	}
+
+	&__row {
+
+		@include screen-sm() {
+			display: table-row;
+		}
+	}
+
+	&__title {
+		padding-bottom: 15px;
+
+		@include screen-sm() {
+			padding-bottom: 25px;
+			padding-right: 30px;
+			display: table-cell;
+		}
+	}
+
+	&__value {
+		padding-bottom: 30px;
+
+		@include screen-sm() {
+			padding-bottom: 25px;
+			display: table-cell;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+include ../components/form
+include ../mixins/project
+include ../mixins/bread
+include ../mixins/employer
+include ../mixins/params
+
+.mb-60
+	.slider.slider_dots_left.slider_arrows_big.slider_height_full
+
+		.slider__item
+			.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						.text
+							.container
+								.row
+									.col-md-9.col-lg-8.col-xl-7
+										h2.main-title
+											span.main-title__title Контактная информация
+				.container.banner__bread
+					+bread
+
+.container
+	h1.title.mb-30= page.title
+
+	.row.mb-30.text-lg
+		.col-sm-6.col-lg-4.mb-30
+			p.mb-5 Телефон:
+			a.title.title_sm.link.link_line_none(href='tel:+79811211212') +7 (981) 121-12-12
+
+		.col-sm-6.col-lg-4.mb-30
+			p.mb-5 Почта:
+			a.title.title_sm.link.link_line_none(href='mailto:manager@galvanochrom.ru') manager@galvanochrom.ru
+
+		.col-lg-4.mb-30
+			p.mb-5 Адрес:
+			p г. Санкт-Петербург Уманский пер., д. 71 (здание "Трест-101"), Местный тел. 282
+
+	.mb-60
+		#map.map
+
+	.row.mb-30
+		.col-md-6.col-lg-7.col-xl-6.mb-30.text-lg
+			h2.title.mb-30 Руководство:
+			+params(params)
+
+		.col-md-6.col-lg-5.offset-xl-1.mb-30
+			h2.title.mb-30.text-lg Остались вопросы?
+			p.strong.mb-30.text-lg Закажите бесплатную консультацию.
+				br
+				| Мы будем рады вам помочь.
+			+form

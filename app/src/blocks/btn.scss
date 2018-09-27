@@ -1,7 +1,9 @@
 $name: btn;
 
 .#{$name} {
+	@extend %transition;
 	display: inline-block;
+	max-width: 100%;
 	text-transform: uppercase;
 	background-color: transparent;
 	border: 2px solid $color-main;
@@ -15,7 +17,7 @@ $name: btn;
 	word-break: break-word;
 	font-weight: bold;
 	padding: 13px 39px;
-	@extend %transition;
+	white-space: normal;
 
 	&:hover {
 		background: $color-main;
