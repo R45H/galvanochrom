@@ -88,7 +88,10 @@ lazyRequireTask('css:libs', tasks + 'css-libs', {
  * Собирает свои js файлы в один
  */
 lazyRequireTask('js', tasks + 'js', {
-	src: app + 'src/script.js', // Путь к исходникам
+	src: [ // Путь к исходникам
+		app + 'src/script.js',
+		app + 'src/blocks/map/map.js'
+	],
 	dist: dist + 'js', // Путь для готовых файлов
 	prod: prod // Флаг сборки на продакшн
 });
