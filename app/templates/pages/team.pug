@@ -1,0 +1,48 @@
+include ../mixins/bread
+include ../mixins/company-detail-block
+
+.mb-60
+	.slider.slider_dots_left.slider_arrows_big.slider_height_full
+
+		.slider__item
+			.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
+				.banner__text-wrap
+					.banner__text-i
+						.text
+							.container
+								.row
+									.col-md-9.col-lg-8.col-xl-7
+										h2.main-title
+											span.main-title__title Наша команда
+				.container.banner__bread
+					+bread
+.container
+	h1.title.mb-30= page.title
+
+	.row
+		.col-sm-6.col-md-4.mb-60
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Ким Вячеслав Елисеевич",
+				text: "Генеральный директор"
+			})
+	.row
+		.col-sm-6.col-md-4.mb-60
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Васильевский Василий Васильевич",
+				text: "Генеральный директор"
+			})
+		.col-sm-6.col-md-4.mb-60
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Ким Вячеслав Елисеевич",
+				text: "Генеральный директор"
+			})
+		.col-sm-6.col-md-4.mb-60
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Ким Вячеслав Елисеевич",
+				text: "Генеральный директор"
+			})
+
