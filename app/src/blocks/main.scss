@@ -12,4 +12,15 @@ $name: main;
 		margin-bottom: 30px;
 		border-bottom: 1px solid $color-gray;
 	}
+
+	&__404 {
+		color: $color-second;
+		font-size: 22rem;
+		font-weight: bold;
+	}
+
+	&_center {
+		display: flex;
+		align-items: center;
+	}
 }

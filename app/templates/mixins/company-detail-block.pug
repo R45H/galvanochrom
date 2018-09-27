@@ -1,0 +1,11 @@
+mixin company-detail-block(data)
+	.company-detail-block
+		.company-detail-block__image(
+			style='background-image: url(' + data.img + ');'
+			role='img'
+			aria-label='text'
+			title='text'
+		)
+		.company-detail-block__text
+			p.company-detail-block__title.title.title_sm= data.title
+			p.text= data.text

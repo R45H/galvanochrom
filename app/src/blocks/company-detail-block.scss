@@ -1,0 +1,29 @@
+$name: company-detail-block;
+
+.#{$name} {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&__image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;
+		padding-bottom: 103%;
+	}
+
+	&__text {
+		background: white;
+		text-align: center;
+		padding: 15px 25px;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-grow: 1;
+	}
+
+	&__title {
+		margin-bottom: 5px;
+	}
+}

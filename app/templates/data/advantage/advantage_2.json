@@ -1,12 +1,12 @@
 {
 	"advantage_2": [
 		{
-			"link": "#",
+			"link": "team.html",
 			"icon": "advantage-command",
 			"text": "Наша команда"
 		},
 		{
-			"link": "#",
+			"link": "certificate.html",
 			"icon": "advantage-certificate",
 			"text": "Сертификаты"
 		}

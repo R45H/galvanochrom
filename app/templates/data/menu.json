@@ -35,11 +35,11 @@
 			"name": "О компании",
 			"sub": [
 				{
-					"link": "#",
+					"link": "certificate.html",
 					"name": "Сертификаты"
 				},
 				{
-					"link": "#",
+					"link": "team.html",
 					"name": "Команда"
 				}
 			]
