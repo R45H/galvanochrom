@@ -29,7 +29,10 @@
 @import 'blocks/input/input'; // Окно ввода
 @import 'blocks/fancybox'; // Зум
 @import 'blocks/space-modificator'; // Хрень с кучей плиток
-@import 'blocks/company-detail-block';
+@import 'blocks/map/map'; // Карта
+@import 'blocks/company-detail-block'; // Карточка с картинкой и заголовком
+@import 'blocks/form'; // Форма
+@import 'blocks/params'; // Таблица с параметрами
 /* Blocks will be inserted here */
 // =====
 

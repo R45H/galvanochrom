@@ -1,0 +1,27 @@
+$name: form;
+
+.#{$name} {
+
+	&__input-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__btn-wrap {
+		margin-top: 30px;
+	}
+
+	&__label {
+		padding-bottom: 5px;
+	}
+
+	&__input {
+
+	}
+}

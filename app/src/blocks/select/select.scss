@@ -83,7 +83,7 @@ $name: select;
 			max-height: 20em;
 			position: relative;
 			outline: none;
-			box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+			box-shadow: $shadow;
 
 			.ui-state-disabled {
 				color: $color-second;

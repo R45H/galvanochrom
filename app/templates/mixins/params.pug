@@ -1,0 +1,7 @@
+mixin params(data)
+	.params
+
+		each val in data
+			.params__row
+				.params__title= val.title
+				.params__value!= val.value

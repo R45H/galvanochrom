@@ -161,6 +161,10 @@ svg {
 	text-align: right;
 }
 
+.mb-5 {
+	margin-bottom: 5px;
+}
+
 .mb-15 {
 	margin-bottom: 15px;
 }
@@ -179,4 +183,12 @@ svg {
 
 .gray {
 	color: $color-gray;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.text-lg {
+	font-size: 16px;
 }

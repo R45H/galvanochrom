@@ -1,8 +1,9 @@
 .container.text-center
-	p.main__404 404
-	.text
-		h2.mb-30= page.title
-		.row.mb-30
-			.col-sm-6.push-sm-3
+	.main__404 404
+
+	.row.mb-60
+		.col-md-8.push-md-2.col-lg-6.push-lg-3
+			.text.mb-30
+				h2= page.title
 				h4 Страница, на которую вы пытаетесь попасть, не существует или была удалена.
-		a.mb-30.btn(href='/') На главную
+			a.btn(href= global.link_home) На главную

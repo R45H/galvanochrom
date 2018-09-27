@@ -1,3 +1,4 @@
+include ../components/form
 include ../mixins/svg
 include ../mixins/project
 include ../mixins/list
@@ -7,12 +8,13 @@ include ../mixins/news
 include ../mixins/bread
 include ../mixins/employer
 include ../mixins/fancybox
+include ../mixins/params
 include ../mixins/company-detail-block
 
 .container
 	.row.mb-30
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-12
 			.text
 				h1 Производство
@@ -48,6 +50,8 @@ include ../mixins/company-detail-block
 			a.link.link_upper(href='#') .link.link_upper
 		.col-md-2.mb-30
 			a.link.link_arrow(href='#') .link.link_arrow
+		.col-md-2.mb-30
+			a.link.link_line_none(href='#') .link.link_line_none
 
 	.row.main__separator
 		.col-sm-3.mb-30
@@ -94,11 +98,11 @@ include ../mixins/company-detail-block
 		.col-12.mb-30
 			h2.title.title_white Производство гальванического оборудования
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-6.col-lg-3
 			+list(list)
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-4
 			+logo
 
@@ -154,7 +158,7 @@ include ../mixins/company-detail-block
 				link: '#'
 			})(class='project_wide')
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-md-4
 			.description
 				.description__text.text
@@ -189,7 +193,7 @@ include ../mixins/company-detail-block
 						.text
 							p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-6
 			.image(style='background-image: url("../img/content/slider/01.jpg")')
 
@@ -272,7 +276,7 @@ include ../mixins/company-detail-block
 		.col.mb-30
 			+employer(employer)
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-3.mb-15
 			input.input(type='text' placeholder=".input")
 		.col-sm-3.mb-15
@@ -281,8 +285,12 @@ include ../mixins/company-detail-block
 			input.input.input_tel(type='tel' placeholder=".input.input_tel")
 		.col-sm-3.mb-15
 			textarea.input(placeholder='textarea.input')
+			
+	.row.main__separator
+		.col-sm-5
+			+form
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-4
 			+fancybox({
 				link: 'img/content/slider/01.jpg',
@@ -297,7 +305,7 @@ include ../mixins/company-detail-block
 				bg: true
 			})
 
-	.row.main__separator.mb-30
+	.row.main__separator
 		.col-sm-6
 			+fancybox({
 				link: 'img/content/slider/01.jpg',
@@ -336,7 +344,8 @@ include ../mixins/company-detail-block
 						group: 'group-1',
 						bg: true
 					})
-	.row.main__separator.mb-30
+
+	.row.main__separator
 		.col-sm-6.col-md-4.mb-30
 			+company-detail-block({
 				img: "../img/content/company-detail-block/01.png",
@@ -363,3 +372,11 @@ include ../mixins/company-detail-block
 				title: "Васильевский Василий Васильевский Василий",
 				text: "Генеральный директор"
 			})
+
+	.row.main__separator
+		.col-12
+			#map.map
+
+	.row.main__separator
+		.col-sm-6
+			+params(params)
