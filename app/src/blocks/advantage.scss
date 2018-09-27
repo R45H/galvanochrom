@@ -60,10 +60,10 @@ $name: advantage;
 
 a.#{$name} {
 	@extend %transition;
+	@extend %shadow;
 	cursor: pointer;
 
 	&:hover {
-		box-shadow: 0 0 10px rgba(0, 0, 0, .25);
 		background-color: $color-main;
 		color: white;
 		fill: white;
