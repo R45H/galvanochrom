@@ -78,12 +78,21 @@ $name: select;
 			list-style-type: none;
 			padding: 0;
 			margin: -1px 0 0;
-			border: 1px solid $color-gray-medium;
 			color: $color-text;
 			font-size: 16px;
 			max-height: 20em;
 			position: relative;
 			outline: none;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+			.ui-state-disabled {
+				color: $color-second;
+				outline: none;
+
+				.ui-menu-item-wrapper {
+					cursor: default;
+				}
+			}
 		}
 
 		.ui-menu-item-wrapper {

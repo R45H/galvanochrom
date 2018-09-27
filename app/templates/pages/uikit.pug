@@ -7,6 +7,7 @@ include ../mixins/news
 include ../mixins/bread
 include ../mixins/employer
 include ../mixins/fancybox
+include ../mixins/company-detail-block
 
 .container
 	.row.mb-30
@@ -335,3 +336,30 @@ include ../mixins/fancybox
 						group: 'group-1',
 						bg: true
 					})
+	.row.main__separator.mb-30
+		.col-sm-6.col-md-4.mb-30
+			+company-detail-block({
+				img: "../img/content/company-detail-block/01.png",
+				title: "Сертификат соответствия",
+				text: "Системы менеджмента качества ISO 9001:2016",
+				link: true
+			})(class="company-detail-block_height_lg")
+		.col-sm-6.col-md-4.mb-30
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Васильевский Василий Васильевич",
+				text: "Генеральный директор"
+			})
+	.row.main__separator.mb-30
+		.col-sm-6.col-md-4.mb-30
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Васильевский Василий",
+				text: "Генеральный директор"
+			})
+		.col-sm-6.col-md-4.mb-30
+			+company-detail-block({
+				img: "../img/content/company-detail-block/02.png",
+				title: "Васильевский Василий Васильевский Василий",
+				text: "Генеральный директор"
+			})
