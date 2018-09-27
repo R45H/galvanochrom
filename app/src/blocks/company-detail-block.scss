@@ -12,10 +12,17 @@ $name: company-detail-block;
 		padding-bottom: 103%;
 	}
 
+	&_height_lg {
+
+		.#{$name}__image {
+			padding-bottom: 138%;
+		}
+	}
+
 	&__text {
 		background: white;
 		text-align: center;
-		padding: 15px 25px;
+		padding: 15px 10px;
 		align-items: center;
 		display: flex;
 		flex-direction: column;

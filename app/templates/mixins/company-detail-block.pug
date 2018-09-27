@@ -1,11 +1,20 @@
+include global
+
 mixin company-detail-block(data)
-	.company-detail-block
-		.company-detail-block__image(
+	.company-detail-block(class=attributes.class)
+		+g-tag((data && data.link === true) ? 'a' : '')(
 			style='background-image: url(' + data.img + ');'
 			role='img'
-			aria-label='text'
+			ariaLabel='text'
 			title='text'
+			class="company-detail-block__image"
+			href=data.img
+			data-fancybox="fancybox"
+			data-caption="fancybox"
+			class=((data && data.link === true) ? 'fancybox' : '')
 		)
 		.company-detail-block__text
 			p.company-detail-block__title.title.title_sm= data.title
 			p.text= data.text
+
+
