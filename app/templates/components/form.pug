@@ -1,0 +1,21 @@
+mixin form
+	form.form
+
+		.form__input-wrap
+			label.form__label(for='formInput-1') Как вас зовут?
+			input.input.form__input(id='formInput-1' type='text' placeholder='Александр')
+
+		.form__input-wrap
+			label.form__label(for='formInput-2') Телефон:
+			input.input.input_tel.form__input(id='formInput-2' type='tel' placeholder='+7 (___) ___-__-__')
+
+		.form__input-wrap
+			label.form__label(for='formInput-3') Эл. почта:
+			input.input.form__input(id='formInput-3' type='email' placeholder='alex@mail.ru')
+
+		.form__input-wrap
+			label.form__label(for='formInput-4') Вопрос?
+			textarea.input.form__input(id='formInput-4' placeholder='Какая площадь требуется для объекта?')
+
+		.form__btn-wrap
+			input.btn(type='submit' value='Отправить заявку')

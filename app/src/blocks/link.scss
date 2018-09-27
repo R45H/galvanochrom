@@ -26,4 +26,8 @@ $name: link;
 	&_upper {
 		text-transform: uppercase;
 	}
+
+	&_line_none {
+		border-bottom-color: transparent;
+	}
 }
