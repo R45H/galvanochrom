@@ -4,4 +4,8 @@ $name: wrapper;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+
+	&_center {
+		align-items: center;
+	}
 }
