@@ -5,13 +5,16 @@ $name: space-modificator;
 	flex-direction: column;
 	justify-content: space-between;
 
-	.fancybox__bg {
-		padding-bottom: 64%;
+	&__fancybox {
+
+		.fancybox__bg {
+			padding-bottom: 64%;
+		}
 	}
 
 	@include screen-md(max) {
 
-		.fancybox {
+		&__fancybox {
 			margin-bottom: 30px;
 		}
 	}

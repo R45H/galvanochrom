@@ -1,6 +1,8 @@
 $name: advantage;
 
 .#{$name} {
+	@extend %transition;
+	@extend %shadow;
 	background: white;
 	color: $color-text;
 	width: 100%;
@@ -11,6 +13,24 @@ $name: advantage;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	&:hover {
+		background-color: $color-main;
+		color: white;
+		fill: white;
+
+		.#{$name} {
+
+			&__img-wrap {
+				transition: border $transition;
+				border: 2px solid white;
+			}
+		}
+	}
+
+	&:active {
+		background-color: $color-main-active;
+	}
 
 	&__img-wrap {
 		width: 50%;
@@ -55,29 +75,5 @@ $name: advantage;
 				width: 20%;
 			}
 		}
-	}
-}
-
-a.#{$name} {
-	@extend %transition;
-	@extend %shadow;
-	cursor: pointer;
-
-	&:hover {
-		background-color: $color-main;
-		color: white;
-		fill: white;
-
-		.#{$name} {
-
-			&__img-wrap {
-				transition: border $transition;
-				border: 2px solid white;
-			}
-		}
-	}
-
-	&:active {
-		background-color: $color-main-active;
 	}
 }

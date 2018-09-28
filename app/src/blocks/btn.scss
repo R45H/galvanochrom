@@ -21,13 +21,13 @@ $name: btn;
 
 	&:hover {
 		background: $color-main;
-		color: #fff;
+		color: white;
 	}
 
 	&:active {
 		background: $color-main-active;
 		border: 2px solid $color-main-active;
-		color: #fff;
+		color: white;
 	}
 
 	&_wide {

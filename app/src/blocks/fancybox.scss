@@ -6,6 +6,7 @@ $name: fancybox;
 	outline: none;
 
 	&::after {
+		@extend %transition;
 		content: '\f002';
 		font-family: $font-fa;
 		display: flex;
@@ -21,7 +22,6 @@ $name: fancybox;
 		height: 100%;
 		background: rgba($color-main, .8);
 		opacity: 0;
-		transition: all ease-out .5s;
 		z-index: 1;
 	}
 
@@ -29,6 +29,14 @@ $name: fancybox;
 
 		&::after {
 			opacity: 1;
+		}
+	}
+
+	&:active {
+
+		&::after {
+			opacity: 1;
+			background: rgba($color-main-active, .8);
 		}
 	}
 

@@ -1,6 +1,5 @@
 include ../mixins/bread
 include ../mixins/fancybox
-include ../mixins/employer
 
 .mb-60
 	.slider.slider_dots_left.slider_arrows_big.slider_height_full
@@ -20,47 +19,51 @@ include ../mixins/employer
 .container
 	h1.title.mb-30= page.title
 
-	.row
-		.col-md-6.mb-30
-			+fancybox({
-				link: 'img/content/slider/01.jpg',
-				title: 'Img 1',
-				group: 'group-1',
-				bg: true
-			})
-		.col-md-6.space-modificator.mb-30
-			.row
-				.col-sm-6
-					+fancybox({
-						link: 'img/content/slider/01.jpg',
-						title: 'Img 1',
-						group: 'group-1',
-						bg: true
-					})
-				.col-sm-6
-					+fancybox({
-						link: 'img/content/slider/01.jpg',
-						title: 'Img 1',
-						group: 'group-1',
-						bg: true
-					})
-			.row
-				.col-sm-6
-					+fancybox({
-						link: 'img/content/slider/01.jpg',
-						title: 'Img 1',
-						group: 'group-1',
-						bg: true
-					})
-				.col-sm-6
-					+fancybox({
-						link: 'img/content/slider/01.jpg',
-						title: 'Img 1',
-						group: 'group-1',
-						bg: true
-					})
+	.text.mb-30
+		.row
+			.col-md-6.mb-30
+				+fancybox({
+					link: 'img/content/slider/01.jpg',
+					title: 'Img 1',
+					group: 'group-1',
+					bg: true
+				})
+			.col-md-6.space-modificator.mb-30
+				.row
+					.col-sm-6
+						+fancybox({
+							link: 'img/content/slider/01.jpg',
+							title: 'Img 1',
+							group: 'group-1',
+							bg: true
+						})(class='space-modificator__fancybox')
+					.col-sm-6
+						+fancybox({
+							link: 'img/content/slider/01.jpg',
+							title: 'Img 1',
+							group: 'group-1',
+							bg: true
+						})(class='space-modificator__fancybox')
+				.row
+					.col-sm-6
+						+fancybox({
+							link: 'img/content/slider/01.jpg',
+							title: 'Img 1',
+							group: 'group-1',
+							bg: true
+						})(class='space-modificator__fancybox')
+					.col-sm-6
+						+fancybox({
+							link: 'img/content/slider/01.jpg',
+							title: 'Img 1',
+							group: 'group-1',
+							bg: true
+						})(class='space-modificator__fancybox')
 
-	.row.mb-30
+		.row
 
-		.col-12.mb-30
-			+employer(employer)(class= "employer_transparent")
+			.col-12.mb-30
+				h3 Заказчик:
+				p ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
+				h3 Выполненные работы:
+				p Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.

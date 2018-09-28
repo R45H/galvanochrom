@@ -1,5 +1,8 @@
+include global
+
 mixin advantage(data)
-	a.advantage(
+	+g-tag(data && data.link ? 'a' : '')(
+		class='advantage'
 		class= attributes.class
 		href= data.link
 	)

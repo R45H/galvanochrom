@@ -191,10 +191,18 @@ $name: slider;
 		.slick-list {
 			display: flex;
 			flex-grow: 1;
+
+			@include screen-xl() {
+				min-height: calc(100vh - 141px);
+			}
 		}
 
 		.slick-track {
 			display: flex;
+
+			@include screen-xl() {
+				min-height: calc(100vh - 141px);
+			}
 		}
 
 		.slick-slide {
@@ -206,6 +214,14 @@ $name: slider;
 
 		.#{$name} {
 			// =====
+
+			&__item {
+				min-height: 70vh;
+
+				@include screen-xl() {
+					min-height: calc(100vh - 141px);
+				}
+			}
 
 			&__dots {
 				position: static;

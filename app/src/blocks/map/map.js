@@ -68,18 +68,22 @@ function initMap() {
 		/* ===== */
 
 		/* Маркеры */
-		var image = 'img/map-marker.svg';
+		var image = {
+			url: 'img/map-marker.svg',
+			scaledSize: new google.maps.Size(60, 60)
+		};
 
 		var marker1 = new google.maps.Marker({
 			position: dot1,
 			map: map1,
+			optimized: false,
 			icon: image
 		});
 
+		openInfoWindow();
+
 		marker1.addListener('click', function() {
-			infoWindow.setContent(getContent(address));
-			infoWindow.open(map1, marker1);
-			refreshResizeListener(map1, dot1);
+			openInfoWindow();
 		});
 		/* ======= */
 
@@ -100,6 +104,12 @@ function initMap() {
 			google.maps.event.trigger(map, "resize");
 			map.panTo(dot);
 		});
+	}
+
+	function openInfoWindow() {
+		infoWindow.setContent(getContent(address));
+		infoWindow.open(map1, marker1);
+		refreshResizeListener(map1, dot1);
 	}
 }
 /* ========== */
