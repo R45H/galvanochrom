@@ -247,7 +247,7 @@ include ../mixins/banner
 		- for (var i = 0; i < 3; i++) {
 			.slider__item
 				+banner({
-					img: '../img/content/slider/01.jpg',
+					img: '../img/content/slider/01.jpg'
 				})(class='banner_valign_center banner_shadow_left slider__banner')
 					.container
 						.row
@@ -258,6 +258,27 @@ include ../mixins/banner
 		- }
 
 .container
+
+	.row.main__separator
+		.col-12
+			.slider-list
+				.row
+
+					.col-md-5.col-lg-4.mb-30
+						+list({})(class='slider-list__list')
+
+					.col-md-7.col-lg-8.mb-30
+						.slider-list__slider
+
+							each val in list
+								.slider-list__item(data-title= val.text)
+									+banner({
+										img: '../img/content/slider/01.jpg',
+										title: 'Твердое хромирование',
+										link: val.link
+									})
+										p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+
 	.row.main__separator
 		.col.mb-30
 			+news({

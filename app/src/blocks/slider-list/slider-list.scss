@@ -1,0 +1,40 @@
+$name: slider-list;
+
+.#{$name} {
+	overflow: hidden;
+
+	.slick-list {
+		margin: 0 -10px;
+		height: 100%;
+	}
+
+	.slick-track {
+		height: 100%;
+	}
+
+	.slick-slide {
+
+		> div {
+			display: flex;
+			height: 100%;
+		}
+	}
+
+	a {
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__slider {
+		overflow: hidden;
+		user-select: auto;
+		height: 100%;
+	}
+
+	&__item {
+		outline: none;
+		padding: 0 10px;
+	}
+}

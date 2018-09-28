@@ -5,6 +5,9 @@ $(function() {
 		//=require 'blocks/slider/slider.js'
 	}());
 	(function() {
+		//=require 'blocks/slider-list/slider-list.js'
+	}());
+	(function() {
 		//=require 'blocks/select/select.js'
 	}());
 	(function() {
