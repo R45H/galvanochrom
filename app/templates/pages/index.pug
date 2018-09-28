@@ -2,22 +2,22 @@ include ../mixins/list
 include ../mixins/advantage
 include ../mixins/project
 include ../mixins/description
+include ../mixins/banner
 
 .mb-60
 	.slider.slider_dots_left.slider_arrows_big.slider_height_full
 
 		- for (var i = 0; i < 3; i++) {
 			.slider__item
-				.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
-					.banner__text-wrap
-						.banner__text-i
-							.text
-								.container
-									.row
-										.col-md-9.col-lg-8.col-xl-7
-											h1.main-title
-												span.main-title__title Производство гальванического оборудования
-												span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
+				+banner({
+					img: '../img/content/slider/01.jpg'
+				})(class='banner_valign_center banner_shadow_left slider__banner')
+					.container
+						.row
+							.col-md-9.col-lg-8.col-xl-7
+								h1.main-title
+									span.main-title__title Производство гальванического оборудования
+									span.main-title__desc Полный цикл работ: проектирование, изготовление, монтаж, запуск
 		- }
 
 .container
@@ -28,12 +28,11 @@ include ../mixins/description
 			+list(list)
 
 		.col-md-7.col-lg-8.mb-30
-			.banner(style='background-image: url("../img/content/slider/01.jpg");')
-				.banner__text-wrap
-					.banner__text-i
-						h2.title.title_white.mb-15 Твердое хромирование
-						.text
-							p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
+			+banner({
+				img: '../img/content/slider/01.jpg',
+				title: 'Твердое хромирование'
+			})(class='banner_shadow_left')
+				p Хромирование происходит при неполном погружении детали в электролит и её вращением. В некоторых случаях осуществляется прокачка хромового электролита через межэлектродный зазор с заданной скоростью.
 
 .container
 	h2.title.mb-30 Полный комплекс работ под ключ

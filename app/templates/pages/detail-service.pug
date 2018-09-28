@@ -1,20 +1,18 @@
-include ../mixins/bread
+include ../mixins/banner
 
 .mb-60
 	.slider.slider_dots_left.slider_arrows_big.slider_height_full
 
 		.slider__item
-			.banner.banner_valign_center.banner_shadow_left.slider__banner(style='background-image: url("../img/content/slider/01.jpg");')
-				.banner__text-wrap
-					.banner__text-i
-						.text
-							.container
-								.row
-									.col-md-9.col-lg-8.col-xl-7
-										h2.main-title
-											span.main-title__title Нестандартные задачи и их решение - это наш профиль!
-				.container.banner__bread
-					+bread
+			+banner({
+				img: '../img/content/slider/01.jpg',
+				includeBread: true
+			})(class='banner_valign_center banner_shadow_left slider__banner')
+				.container
+					.row
+						.col-md-9.col-lg-8.col-xl-7
+							h2.main-title
+								span.main-title__title Нестандартные задачи и их решение - это наш профиль!
 
 .container
 	h1.title.mb-30= page.title

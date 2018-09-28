@@ -1,0 +1,22 @@
+include global
+include bread
+
+mixin banner(data)
+	+g-tag(data.link ? 'a' : '')(
+		class='banner'
+		class= attributes.class
+		href= data.link
+		style='background-image: url(' + data.img + ');'
+	)
+		.banner__text-wrap
+			.banner__text-i
+
+				if data.title
+					h2.title.title_white.mb-15= data.title
+
+				.text
+					block
+
+		if (data.includeBread)
+			.container.banner__bread
+				+bread

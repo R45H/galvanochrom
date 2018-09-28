@@ -3,7 +3,11 @@ mixin g-tag(tag)
 		when 'a': a(
 			class= attributes.class
 			href= attributes.href
+			style= attributes.style
 			data-fancybox= attributes['data-fancybox']
 			data-caption= attributes['data-caption']
 		): block
-		default: div(class= attributes.class): block
+		default: div(
+			class= attributes.class
+			style= attributes.style
+		): block
