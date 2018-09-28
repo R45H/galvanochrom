@@ -90,7 +90,8 @@ svg {
 }
 
 ::selection {
-
+	color: white;
+	background-color: $color-main;
 }
 
 .hidden-xs {

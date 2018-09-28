@@ -1,5 +1,6 @@
 include ../mixins/fancybox
 include ../mixins/banner
+include ../mixins/employer
 
 .mb-60
 	.slider.slider_dots_left.slider_arrows_big.slider_height_full
@@ -18,7 +19,7 @@ include ../mixins/banner
 .container
 	h1.title.mb-30= page.title
 
-	.text.mb-30
+	.mb-30
 		.row
 			.col-md-6.mb-30
 				+fancybox({
@@ -62,7 +63,4 @@ include ../mixins/banner
 		.row
 
 			.col-12.mb-30
-				h3 Заказчик:
-				p ОАО « ЗПК «Стакол», г. Петушки, Владимирская область
-				h3 Выполненные работы:
-				p Разработка, изготовление, монтаж и пуск в эксплуатацию 4-х комплектов оборудования и технологической оснастки для скоростного проточного хромирования стальных поршневых колец 60…100 мм.
+				+employer(employer)(class='employer_simple')

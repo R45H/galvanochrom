@@ -41,6 +41,8 @@ $name: banner;
 	}
 
 	&__bread {
+		position: relative;
+		z-index: 1;
 
 		@include screen-sm(max) {
 			width: 100%;

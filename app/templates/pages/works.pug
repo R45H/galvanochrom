@@ -22,26 +22,14 @@ include ../mixins/banner
 	.mb-60
 		.slider.slider_dots_none.slider_arrows_big
 
-			.slider__item
-				+project({
-					link: 'detail-works.html',
-					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-					src: '../img/content/project/01.jpg'
-				})(class='project_wide project_strong')
-
-			.slider__item
-				+project({
-					link: 'detail-works.html',
-					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-					src: '../img/content/project/01.jpg'
-				})(class='project_wide project_strong')
-
-			.slider__item
-				+project({
-					link: 'detail-works.html',
-					text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
-					src: '../img/content/project/01.jpg'
-				})(class='project_wide project_strong')
+			- for (var i = 0; i < 3; i++) {
+				.slider__item
+					+project({
+						link: 'detail-works.html',
+						text: 'ОАО « ЗПК «Стакол», г. Петушки, Владимирская область',
+						src: '../img/content/project/01.jpg'
+					})(class='project_wide project_strong')
+			- }
 
 	.row.mb-30
 
