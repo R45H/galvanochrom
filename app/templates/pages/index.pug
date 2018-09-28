@@ -1,6 +1,7 @@
 include ../mixins/list
 include ../mixins/advantage
 include ../mixins/project
+include ../mixins/description
 
 .mb-60
 	.slider.slider_dots_left.slider_arrows_big.slider_height_full
@@ -38,15 +39,8 @@ include ../mixins/project
 	h2.title.mb-30 Полный комплекс работ под ключ
 
 	.row.mb-30
-		.col-md-5.col-lg-4.mb-30
-			.description
-				.description__text.text
-					p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
-					p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
-				.description__btn
-					a.btn.btn_wide(href='service.html') Вcе услуги
 
-		.col-md-7.col-lg-8.mb-30
+		.col-lg-7.push-lg-5.col-xl-8.push-xl-4.mb-30
 			.slider
 				.slider__item
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
@@ -54,6 +48,14 @@ include ../mixins/project
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
 				.slider__item
 					.image(style='background-image: url("../img/content/slider/01.jpg")')
+
+		.col-lg-5.pull-lg-7.col-xl-4.pull-xl-8.mb-30
+			+description({
+				link: 'service.html',
+				btnText: 'Все услуги'
+			})
+				p Разработка нестандартного оборудования и технологий нанесения хромовых покрытий и электрохимической обработки - основной вид нашей деятельности на протяжении более тридцати лет.
+				p Мы готовы выполнить полный комплекс работ по проектированию и изготовлению любого типа оборудования для хромирования и электрохимической обработки, в т.ч. со сдачей объекта Заказчику "под ключ".
 
 .container
 	h2.title.mb-30 Наши преимущества
@@ -69,15 +71,17 @@ include ../mixins/project
 
 	.row.mb-30
 
-		.col-md-5.col-lg-4.mb-30
-			.description
-				.description__text.text
-					p У нашей компании 20-ти летний опыт внедрения гальванических технологий на крупных предприятиях гражданской и оборонной среды. Мы гарантируем высокое качество продукции, изготавливаемое с учетом всех современных требований.
-				.description__btn
-					a.btn.btn_wide(href='company.html') Подробнее о компании
+		.col-lg-7.push-lg-5.col-xl-8.push-xl-4.mb-30
+			.slider
+				.slider__item
+					.image(style='background-image: url("../img/content/slider/01.jpg")')
 
-		.col-md-7.col-lg-8.mb-30
-			.image(style='background-image: url("../img/content/slider/01.jpg")')
+		.col-lg-5.pull-lg-7.col-xl-4.pull-xl-8.mb-30
+			+description({
+				link: 'company.html',
+				btnText: 'Подробнее о компании'
+			})
+				p У нашей компании 20-ти летний опыт внедрения гальванических технологий на крупных предприятиях гражданской и оборонной среды. Мы гарантируем высокое качество продукции, изготавливаемое с учетом всех современных требований.
 
 .container
 	h2.title.mb-30 Галерея реализованного оборудования
