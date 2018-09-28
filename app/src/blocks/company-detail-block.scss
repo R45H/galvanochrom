@@ -5,11 +5,15 @@ $name: company-detail-block;
 	flex-direction: column;
 	height: 100%;
 
-	&__image {
-		background-size: contain;
-		background-repeat: no-repeat;
+	&__image-wrap {
+		display: block;
 		width: 100%;
-		padding-bottom: 103%;
+	}
+
+	&__image {
+		background: no-repeat center / cover;
+		width: 100%;
+		padding-bottom: 100%;
 	}
 
 	&_height_lg {
@@ -32,5 +36,13 @@ $name: company-detail-block;
 
 	&__title {
 		margin-bottom: 5px;
+	}
+
+	&_contain {
+
+		.#{$name}__image {
+			background-size: contain;
+			background-position: bottom;
+		}
 	}
 }

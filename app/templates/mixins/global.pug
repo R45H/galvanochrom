@@ -5,15 +5,5 @@ mixin g-tag(tag)
 			href= attributes.href
 			data-fancybox= attributes['data-fancybox']
 			data-caption= attributes['data-caption']
-			style=attributes.style
-			role=attributes.role
-			aria-label=attributes.ariaLabel
-			title=attributes.title
 		): block
-		default: div(
-			class= attributes.class
-			style=attributes.style
-			role=attributes.role
-			aria-label=attributes.ariaLabel
-			title=attributes.title
-		): block
+		default: div(class= attributes.class): block
